@@ -4,7 +4,8 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use \Input as Input;
+use App\Employee;
 class EmployeeController extends Controller
 {
     /**
@@ -12,6 +13,13 @@ class EmployeeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     public function list()
+     {
+         $employees = Employee::all();
+
+         return view('pages.admin.employee.list', compact('employees'));
+     }
     
     public function index()
     {
@@ -26,6 +34,9 @@ class EmployeeController extends Controller
     public function create()
     {
         //
+
+        return view('pages.admin.employee.add');
+
     }
 
     /**
@@ -36,7 +47,19 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $data = [
+            'name' => $request->name,
+            'address' => $request->address,
+            'nik' => $request->nik,
+            'graduated_from' => $request->graduated_from,
+            'degree' => $request->degree
+            
+        ];
+        $employee = Employee::create($data);
+
+        return redirect()->route('admin.employee.list');
+        
     }
 
     /**
@@ -71,6 +94,18 @@ class EmployeeController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $employee = Employee::find($id);
+        $data = [
+            'name' => $request->name,
+            'address' => $request->address,
+            'nik' => $request->nik,
+            'graduated_from' => $request->graduated_from,
+            'degree' => $request->degree
+            
+        ];
+        $employee->fill($data)->save();
+
+        return redirect()->route('admin.employee.list');
     }
 
     /**
@@ -82,5 +117,9 @@ class EmployeeController extends Controller
     public function destroy($id)
     {
         //
+        
+        $employee = Employee::find($id)->delete();
+        
+        return redirect()->route('admin.employee.list');
     }
 }

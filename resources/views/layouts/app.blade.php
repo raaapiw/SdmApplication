@@ -340,9 +340,9 @@
                                 <li>
                                     <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Karyawan</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">Tambah Karyawan</a></li>
+                                        <li><a href="{{ route('admin.employee.create')}}">Tambah Karyawan</a></li>
                                         <li><a href="#">Perpanjang Kontrak Kar</a></li>
-                                        <li><a href="#">Daftar Karyawan</a></li>
+                                        <li><a href="{{ route('admin.employee.list')}}">Daftar Karyawan</a></li>
                                         
                                     </ul>
                                 </li>
@@ -351,6 +351,14 @@
                                     <ul aria-expanded="false" class="collapse">
                                         <li><a href="#">Tambah Kontrak</a></li>
                                         <li><a href="#">Daftar Kontrak</a></li>
+                                       
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Laporan</span></a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="#">Buat Laporan</a></li>
+                                        <li><a href="#">Daftar Laporan</a></li>
                                        
                                     </ul>
                                 </li>

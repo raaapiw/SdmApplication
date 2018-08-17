@@ -25,6 +25,11 @@ Route::group(['middleware' => 'admin'], function() {
         return redirect()->route('admin.dashboard');
     });
     Route::get('/admin/dashboard', 'admin\UserController@dashboard') ->name('admin.dashboard');
+    Route::get('/admin/employee/list', 'admin\EmployeeController@list')->name('admin.employee.list');
+    Route::get('/admin/employee/add', 'admin\EmployeeController@create')->name('admin.employee.create');
+    Route::post('/admin/employee/store', 'admin\EmployeeController@store') ->name('admin.employee.store');
+    Route::post('/admin/employee/update/{id}', 'admin\EmployeeController@store') ->name('admin.employee.update');
+    
     
 });
 

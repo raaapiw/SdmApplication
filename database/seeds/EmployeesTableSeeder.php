@@ -16,7 +16,8 @@ class EmployeesTableSeeder extends Seeder
         $faker = Faker::create();
         foreach(range(0,10) as $index){
             DB::table('employees')->insert([               
-                'name' => $faker->name(),
+                'name' => $faker->name(),             
+                'nik' => 11+$index,
                 'address' => $faker->address(),   
                 'graduated_from' => $faker->phoneNumber (),
                 'degree' => $faker->company()
