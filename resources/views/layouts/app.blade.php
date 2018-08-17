@@ -354,6 +354,14 @@
                                        
                                     </ul>
                                 </li>
+                                <li>
+                                    <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Laporan</span></a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="#">Buat Laporan</a></li>
+                                        <li><a href="#">Daftar Laporan</a></li>
+                                       
+                                    </ul>
+                                </li>
                                 {{-- <li>
                                     <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Patient</span></a>
                                     <ul aria-expanded="false" class="collapse">
