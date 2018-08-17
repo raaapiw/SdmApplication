@@ -34,6 +34,9 @@ class EmployeeController extends Controller
     public function create()
     {
         //
+
+        return view('pages.admin.employee.add');
+
     }
 
     /**
@@ -44,7 +47,19 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $data = [
+            'name' => $request->name,
+            'address' => $request->address,
+            'nik' => $request->nik,
+            'graduated_from' => $request->graduated_from,
+            'degree' => $request->degree
+            
+        ];
+        $employee = Employee::create($data);
+
+        return redirect()->route('admin.employee.list');
+        
     }
 
     /**
@@ -79,6 +94,18 @@ class EmployeeController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $employee = Employee::find($id);
+        $data = [
+            'name' => $request->name,
+            'address' => $request->address,
+            'nik' => $request->nik,
+            'graduated_from' => $request->graduated_from,
+            'degree' => $request->degree
+            
+        ];
+        $employee->fill($data)->save();
+
+        return redirect()->route('admin.employee.list');
     }
 
     /**
@@ -90,5 +117,9 @@ class EmployeeController extends Controller
     public function destroy($id)
     {
         //
+        
+        $employee = Employee::find($id)->delete();
+        
+        return redirect()->route('admin.employee.list');
     }
 }

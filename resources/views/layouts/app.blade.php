@@ -340,7 +340,7 @@
                                 <li>
                                     <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Karyawan</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">Tambah Karyawan</a></li>
+                                        <li><a href="{{ route('admin.employee.create')}}">Tambah Karyawan</a></li>
                                         <li><a href="#">Perpanjang Kontrak Kar</a></li>
                                         <li><a href="{{ route('admin.employee.list')}}">Daftar Karyawan</a></li>
                                         
