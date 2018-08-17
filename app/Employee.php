@@ -14,4 +14,8 @@ class Employee extends Model
         'graduated_from',
         'degree'
     ];
+
+    public function contracts(){
+        return $this->hasMany(Contract::class);
+    }
 }
