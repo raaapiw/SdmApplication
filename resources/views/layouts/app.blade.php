@@ -342,7 +342,7 @@
                                     <ul aria-expanded="false" class="collapse">
                                         <li><a href="#">Tambah Karyawan</a></li>
                                         <li><a href="#">Perpanjang Kontrak Kar</a></li>
-                                        <li><a href="#">Daftar Karyawan</a></li>
+                                        <li><a href="{{ route('admin.employee.list')}}">Daftar Karyawan</a></li>
                                         
                                     </ul>
                                 </li>

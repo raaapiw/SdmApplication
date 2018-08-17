@@ -4,7 +4,8 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use \Input as Input;
+use App\Employee;
 class EmployeeController extends Controller
 {
     /**
@@ -12,6 +13,13 @@ class EmployeeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     public function list()
+     {
+         $employees = Employee::all();
+
+         return view('pages.admin.employee.list', compact('employees'));
+     }
     
     public function index()
     {
