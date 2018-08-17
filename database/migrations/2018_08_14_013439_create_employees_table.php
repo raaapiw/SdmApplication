@@ -18,8 +18,8 @@ class CreateEmployeesTable extends Migration
             $table->string('nik');
             $table->string('name');
             $table->string('address');
-            $table->string('school');
-            $table->string('graduate');
+            $table->string('graduated_from');
+            $table->string('degree');
             $table->timestamps();
         });
     }
