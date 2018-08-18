@@ -33,4 +33,7 @@ Route::group(['middleware' => 'admin'], function() {
     
 });
 
+Route::get('/pdf', 'PdfController@index')->name('pdf');
+Route::get('/pdf/download/{id}', 'PdfController@download')->name('pdf.download');
+
 Route::get('/home', 'HomeController@index')->name('home');

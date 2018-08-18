@@ -362,6 +362,9 @@
                                        
                                     </ul>
                                 </li>
+                                <li>
+                                    <a href="{{ route('pdf') }}" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Test PDF</span></a>
+                                </li>
                                 {{-- <li>
                                     <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Patient</span></a>
                                     <ul aria-expanded="false" class="collapse">
