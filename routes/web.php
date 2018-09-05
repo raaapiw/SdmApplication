@@ -28,7 +28,8 @@ Route::group(['middleware' => 'admin'], function() {
     Route::get('/admin/employee/list', 'admin\EmployeeController@list')->name('admin.employee.list');
     Route::get('/admin/employee/add', 'admin\EmployeeController@create')->name('admin.employee.create');
     Route::post('/admin/employee/store', 'admin\EmployeeController@store') ->name('admin.employee.store');
-    Route::post('/admin/employee/update/{id}', 'admin\EmployeeController@store') ->name('admin.employee.update');
+    Route::post('/admin/employee/update/{id}', 'admin\EmployeeController@update') ->name('admin.employee.update');
+    Route::get('/admin/employee/detail/{id}', 'admin\EmployeeController@detail') ->name('admin.employee.detail');
     
     
 });

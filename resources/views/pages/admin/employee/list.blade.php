@@ -28,6 +28,7 @@
                                 <th><center>No</center></th>
                                 <th style="width:50%"><center>Nama</center></th>
                                 <th><center>Asal Sekolah</center></th>
+                                <th><center>Detail</center></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,10 +37,10 @@
                                     <td><center>{{$key+1}}</center></td>
                                     <td><center>{{ $row->name }}</center></td>
                                     <td>{{ $row->graduated_from }}</td>
-                                    {{-- <td><center>
-                                            <a href="{{ route('admin.order.detail', $row->id)}}"><span><i class="fa fa-search"></i></span></a>
+                                    <td><center>
+                                            <a href="{{ route('admin.employee.detail', $row->id)}}"><span><i class="fa fa-search"></i></span></a>
                                         </center>
-                                    </td> --}}
+                                    </td>
                                 </tr>                            
                             @endforeach
                         </tbody>

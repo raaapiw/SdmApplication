@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use \Input as Input;
 use App\Employee;
+use App\Contract;
 class EmployeeController extends Controller
 {
     /**
@@ -13,6 +14,15 @@ class EmployeeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     public function detail($id)
+     {
+        $employee = Employee::find($id);
+        // $contract = Contract::where('employee_id','=',$id)->get();
+        // dd($employee->contracts);
+
+        return view('pages.admin.employee.detail', compact('employee','contract'));
+     }
 
      public function list()
      {
