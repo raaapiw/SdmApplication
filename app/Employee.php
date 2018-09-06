@@ -18,4 +18,12 @@ class Employee extends Model
     public function contracts(){
         return $this->hasMany(Contract::class);
     }
+    
+    public function facilities(){
+        return $this->hasMany(Facility::class);
+    }
+
+    public function trainings(){
+        return $this->hasMany(Training::class);
+    }
 }

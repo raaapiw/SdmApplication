@@ -13,10 +13,9 @@ class Contract extends Model
         'end_date'
     ];
 
-    public function facilities(){
-        return $this->hasMany(Facility::class);
-    }
+    
     public function employee(){
         return $this->belongsTo(Employee::class);
     }
+    
 }

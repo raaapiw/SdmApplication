@@ -17,6 +17,7 @@ class CreateFacilitiesTable extends Migration
             $table->increments('id');
             $table->integer('employee_id')->unsigned();
             $table->string('facility');
+            $table->string('contract');
             $table->timestamps();
 
             $table->foreign('employee_id')

@@ -12,7 +12,9 @@ class Facility extends Model
         'contract_id',
         'facility',
     ];
-    public function contract(){
-        return $this->belongsTo(Contract::class);
+
+    public function employee(){
+        return $this->belongsTo(Employee::class);
     }
+    
 }
