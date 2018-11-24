@@ -32,6 +32,7 @@
                             <div class="col-md-12">
                                 <div class="card card-outline-info">
                                     <div class="card-body">
+                                        <h3>Data Diri Karyawan</h3>
                                         <div class="form-group">
                                             <label>Nama</label>
                                             <input type="text" name="name" required class="form-control" value="{{ isset($employee) ? $employee->name : ''}}" placeholder="{{ isset($employee) ? $employee->subject : ''}}"/>
@@ -96,6 +97,7 @@
                             <div class="col-md-12">
                                 <div class="card card-outline-info">
                                     <div class="card-body">
+                                        <h3>Data Keluarga Karyawan</h3>
                                         <div class="form-group">
                                             <label>Nama Istri/Suami</label>
                                             <input type="text" name="istri_suami" required class="form-control" value="{{ isset($employee) ? $employee->name : ''}}" placeholder="{{ isset($employee) ? $employee->subject : ''}}"/>
@@ -126,39 +128,6 @@
                             </div>
                         </div>
                     </section>
-                    <!-- Step akhir-->
-                    <h6>Input Kontrak</h6>
-                    <section>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card card-outline-info">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Jenis Kontrak</h3>
-                                        <input type="text" name="name_contract" disabled value="Kontrak I" placeholder="Kontrak I">
-                                        <br>
-                                        <br>
-                                        <div id="dynamic_field">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h3 class="card-title">Fasilitas Ke-1</h3>
-                                                    <input type="text" id="file" name="facility[]" class="dropify" required/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>   
-                        <div class="row">
-                            <div class="col-md-12">
-                                <center>
-                                    <button name="add" id="add" type="button" class="btn btn-block btn-info" data-count=0>Tambah Fasilitas</button>
-                                </center>
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                    </section>
                 </form>
             </div>
         </div>
@@ -174,31 +143,6 @@
 <script src="{{ asset('material/plugins/dropify/dist/js/dropify.min.js')}}"></script>
 <script src="{{ asset('material/plugins/select2/dist/js/select2.full.min.js')}}" type="text/javascript"></script>
 <script src="{{ asset('material/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js')}}" type="text/javascript"></script>
-<script>
-        $( document ).ready(function() {
-            var i = 0;
-            n = i+2;
-            // i = $(this).attr("data-count");
-            // console.log(i);
-            $(document).on("click","#add",function() {
-                $('#dynamic_field').append('<div class="row" id="row'+i+'"><div class="col-md-12"><div class="col-md-12"><br><br><h3 class="card-title">Fasilitas Ke-'+n+'</h3><input type="text" id="file" name="facility[]" class="dropify" required/></div><div class="col-md-12"><div class="form-group"><button type="button" name="btn_remove" id="'+i+'" class="btn btn-danger btn_remove">Clear</button></div></div></div></div>');
-                i++;
-                n++;
-                // $(".select2").select2();
-                // $(".vertical-spin").TouchSpin({
-                //     verticalbuttons: true,
-                //     verticalupclass: 'ti-plus',
-                //     verticaldownclass: 'ti-minus',
-                // });
-            });
-            
-            $(document).on("click", ".btn_remove", function(){  
-                   var button_id = $(this).attr('id');   
-                   $('#row'+button_id+'').remove();  
-            });
-    
-            
-         });
-        </script> 
+
   
 @endsection

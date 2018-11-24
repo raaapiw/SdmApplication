@@ -16,11 +16,11 @@ class CreateTrainingsTable extends Migration
         Schema::create('trainings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('employee_id')->unsigned();
-            $table->string('theme');
-            $table->string('penyelenggara');
-            $table->string('jadwal');
-            $table->string('no_sertifikat');
-            $table->string('biaya');
+            $table->string('theme')->nullable();
+            $table->string('penyelenggara')->nullable();
+            $table->string('jadwal')->nullable();
+            $table->string('no_sertifikat')->nullable();
+            $table->string('biaya')->nullable();
             $table->timestamps();
 
             $table->foreign('employee_id')

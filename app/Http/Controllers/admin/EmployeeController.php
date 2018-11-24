@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use \Input as Input;
 use App\Employee;
 use App\Contract;
+use App\Training;
 class EmployeeController extends Controller
 {
     /**
@@ -18,10 +19,11 @@ class EmployeeController extends Controller
      public function detail($id)
      {
         $employee = Employee::find($id);
-        // $contract = Contract::where('employee_id','=',$id)->get();
+        $contract = Contract::where('employee_id','=',$id)->get();
+        $training = Training::where('employee_id','=',$id)->get();
         // dd($employee->contracts);
 
-        return view('pages.admin.employee.detail', compact('employee','contract'));
+        return view('pages.admin.employee.detail', compact('employee','contract','training'));
      }
 
      public function list()

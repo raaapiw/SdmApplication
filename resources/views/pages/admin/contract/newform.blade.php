@@ -6,10 +6,10 @@
 @section('breadcumb')
 <div class="row page-titles">
     <div class="col-md-5 col-8 align-self-center">
-        <h3 class="text-themecolor m-b-0 m-t-0">{{ isset($order->meeting->bap) ? 'Edit Surat Penawaran': 'Upload Surat Penawaran'}}</h3>
+        <h3 class="text-themecolor m-b-0 m-t-0">{{ isset($contract) ? 'Edit Surat Penawaran': 'Upload Surat Penawaran'}}</h3>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-            <li class="breadcrumb-item active">{{ isset($order->meeting->bap) ? 'Edit Surat Penawaran':'Upload Surat Penawaran'}}</li>
+            <li class="breadcrumb-item active">{{ isset($contract) ? 'Edit Surat Penawaran':'Upload Surat Penawaran'}}</li>
         </ol>
     </div>
 </div>
@@ -20,61 +20,29 @@
     <div class="col-lg-12">
         <div class="card card-outline-info">
             <div class="card-body">
-                <form action="{{ route('admin.meeting.update', $meeting->id)}}" method="POST" enctype="multipart/form-data">
-                    <input type="hidden" name="order_id" value="{{ $meeting->order->id}}">
+                <form action="{{ route('admin.contract.store', $contract->id)}}" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="order_id" value="{{ $contract->employee->id}}">
                     <div class="form-body">
-                        <h3 class="card-title">Company Info</h3>
-                        <hr>
-                        <div class="row p-t-20">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="idPatient1">Id Company :</label>
-                                <input type="text" class="form-control" disabled id="idPatient1" value="{{$meeting->order->client->id}}">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="phoneNumber1">Company Name :</label>
-                                    <input type="tel" class="form-control" disabled id="phoneNumber1" value="{{$meeting->order->client->company_name}}">
-                                </div>
-                            </div>
-                        </div>
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name1">Address :</label>
-                                <input type="text" class="form-control" disabled id="name1" value="{{$meeting->order->client->address}}">
+                            <div class="col-md-12">
+                                <div class="card card-outline-info">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Jenis Kontrak</h3>
+                                        <input type="text" name="name" disabled value="Kontrak I" placeholder="Kontrak I">
+                                        <br>
+                                        <br>
+                                        <div id="dynamic_field">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h3 class="card-title">Fasilitas Ke-1</h3>
+                                                    <input type="text" id="file" name="facility[]" class="dropify" required/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="address1">Phone :</label>
-                                    <input type="text" class="form-control" disabled id="address1" value="{{$meeting->order->client->phone}}">
-                                </div>
-                            </div>
-                            <br>
-                            {{-- <div class="col-md-6">
-                                <div class="form-group">
-                                    <a href="{{ route('doctor.patient.detail', $registration->patient->id)}}"><span><i class="fa fa-info-circle">Details</i></span></a>
-                                </div>
-                            </div> --}}
-                        </div>
-                        <h3 class="box-title m-t-40">Upload Berita Acara</h3>
-                        <hr>
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">File Berita Acara</h4>
-                                    <input type="file" id="file" name="bap" class="dropify" accept="application/pdf" required/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-success" value="upload"><i class="fa fa-check"></i> Submit</button>
-                            <a class="btn btn-inverse btn-close" href="{{ url()->previous() }}">Cancel</a>
-                        </div>
+                        </div>   
                     </div>
                 </form>
             </div>
@@ -92,7 +60,32 @@ $( document ).ready(function() {
 });
 
 </script> 
-
+<script>
+        $( document ).ready(function() {
+            var i = 0;
+            n = i+2;
+            // i = $(this).attr("data-count");
+            // console.log(i);
+            $(document).on("click","#add",function() {
+                $('#dynamic_field').append('<div class="row" id="row'+i+'"><div class="col-md-12"><div class="col-md-12"><br><br><h3 class="card-title">Fasilitas Ke-'+n+'</h3><input type="text" id="file" name="facility[]" class="dropify" required/></div><div class="col-md-12"><div class="form-group"><button type="button" name="btn_remove" id="'+i+'" class="btn btn-danger btn_remove">Clear</button></div></div></div></div>');
+                i++;
+                n++;
+                // $(".select2").select2();
+                // $(".vertical-spin").TouchSpin({
+                //     verticalbuttons: true,
+                //     verticalupclass: 'ti-plus',
+                //     verticaldownclass: 'ti-minus',
+                // });
+            });
+            
+            $(document).on("click", ".btn_remove", function(){  
+                   var button_id = $(this).attr('id');   
+                   $('#row'+button_id+'').remove();  
+            });
+    
+            
+         });
+        </script> 
 
   
 @endsection

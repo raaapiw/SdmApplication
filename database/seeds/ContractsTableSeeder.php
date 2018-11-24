@@ -21,7 +21,7 @@ class ContractsTableSeeder extends Seeder
                 'name' => $faker->name(),
                 'employee_id' => $index + 1,            
                 // 'start_date' => 11+$index,
-                // 'end_date' => $faker->address()
+                'end_date' => $faker->date()
             ]);
         }
     }

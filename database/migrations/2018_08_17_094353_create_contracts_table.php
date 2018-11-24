@@ -16,9 +16,14 @@ class CreateContractsTable extends Migration
         Schema::create('contracts', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('employee_id')->unsigned();
-            $table->string('name');
+            $table->string('name')->nullable();
+            $table->string('gapok')->nullable();
+            $table->string('tunjangan_kinerja')->nullable();
+            $table->string('tunjangan_jabatan')->nullable();
+            $table->string('tunjangan_presjab')->nullable();
             $table->string('start_date')->nullable();
             $table->string('end_date')->nullable();
+            $table->string('plafon')->nullable();
             $table->timestamps();
 
             $table->foreign('employee_id')

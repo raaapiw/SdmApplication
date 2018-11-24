@@ -15,13 +15,13 @@ class CreateFacilitiesTable extends Migration
     {
         Schema::create('facilities', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('employee_id')->unsigned();
-            $table->string('facility');
-            $table->string('contract');
+            $table->integer('contract_id')->unsigned();
+            $table->string('facility')->nullable();
+            $table->string('state')->nullable();
             $table->timestamps();
 
-            $table->foreign('employee_id')
-                ->references('id')->on('employees')
+            $table->foreign('contract_id')
+                ->references('id')->on('contracts')
                 ->onDelete('cascade');
         });
     }

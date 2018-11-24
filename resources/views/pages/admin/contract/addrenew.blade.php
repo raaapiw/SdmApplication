@@ -7,10 +7,10 @@
 @section('breadcumb')
 <div class="row page-titles">
     <div class="col-md-5 col-8 align-self-center">
-        <h3 class="text-themecolor m-b-0 m-t-0">List Karyawan</h3>
+        <h3 class="text-themecolor m-b-0 m-t-0">List Pegawai</h3>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-            <li class="breadcrumb-item active">List Karyawan</li>
+            <li class="breadcrumb-item active">List Pegawai</li>
         </ol>
     </div>
 </div>
@@ -28,7 +28,7 @@
                                 <th><center>No</center></th>
                                 <th style="width:50%"><center>Nama</center></th>
                                 <th><center>Asal Sekolah</center></th>
-                                <th><center>Detail</center></th>
+                                <th><center>Detail Kontrak</center></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -38,7 +38,7 @@
                                     <td><center>{{ $row->name }}</center></td>
                                     <td>{{ $row->graduated_from }}</td>
                                     <td><center>
-                                            <a href="{{ route('admin.employee.detail', $row->id)}}"><span><i class="fa fa-search"></i></span></a>
+                                            <a href="#"><span><i class="fa fa-send"></i></span></a>
                                         </center>
                                     </td>
                                 </tr>                            
