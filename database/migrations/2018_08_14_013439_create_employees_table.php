@@ -14,12 +14,35 @@ class CreateEmployeesTable extends Migration
     public function up()
     {
         Schema::create('employees', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('nik');
-            $table->string('name');
-            $table->string('address');
-            $table->string('graduated_from');
-            $table->string('degree');
+            $table->increments('id')->unsigned();
+            $table->integer('nik')->nullable();
+            $table->string('name')->nullable();
+            $table->string('address')->nullable();
+            $table->string('graduated_from')->nullable();
+            $table->string('degree')->nullable();
+            $table->string('payroll')->nullable();
+            $table->string('state')->nullable();
+            $table->string('jabatan')->nullable();
+            $table->string('wilayah')->nullable();
+            $table->string('no_perjanjian')->nullable();
+            $table->string('religion')->nullable();
+            $table->string('cabang_bank')->nullable();
+            $table->string('norek')->nullable();
+            $table->string('nama_bank')->nullable();
+            $table->string('tgl_ijazah')->nullable();
+            $table->string('npwp')->nullable();
+            $table->string('bpjs_kt')->nullable();
+            $table->string('bpjs_pensiun')->nullable();
+            $table->string('no_ktp')->nullable();
+            $table->string('istri_suami')->nullable();
+            $table->string('anak_1')->nullable();
+            $table->string('anak_2')->nullable();
+            $table->string('anak_3')->nullable();
+            $table->string('bpjs_kes')->nullable();
+            $table->string('bpjs_kes_istri_suami')->nullable();
+            $table->string('bpjs_kes_anak1')->nullable();
+            $table->string('bpjs_kes_anak2')->nullable();
+            $table->string('bpjs_kes_anak3')->nullable();
             $table->timestamps();
         });
     }

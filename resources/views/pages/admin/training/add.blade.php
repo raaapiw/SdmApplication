@@ -7,10 +7,10 @@
 @section('breadcumb')
 <div class="row page-titles">
     <div class="col-md-5 col-8 align-self-center">
-        <h3 class="text-themecolor m-b-0 m-t-0">List Karyawan</h3>
+        <h3 class="text-themecolor m-b-0 m-t-0">Tambah Training</h3>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-            <li class="breadcrumb-item active">List Karyawan</li>
+            <li class="breadcrumb-item active">Tambah Training</li>
         </ol>
     </div>
 </div>
@@ -27,23 +27,18 @@
                             <tr>
                                 <th><center>No</center></th>
                                 <th style="width:50%"><center>Nama</center></th>
-                                <th><center>Tanggal dibuat kontrak</center></th>
-                                <th><center>Tanggal mulai kontrak</center></th>
-                                <th><center>Tanggal akhir kontrak</center></th>
-                                <th><center>Detail</center></th>
+                                <th><center>Asal Sekolah</center></th>
+                                <th><center>Tambah Training</center></th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($contract as $key=>$row)
+                            @foreach($employees as $key=>$row)
                                 <tr>
                                     <td><center>{{$key+1}}</center></td>
-                                    <td><center>{{ $row->employee->name }}</center></td>
-                                    <td>{{ $row->start_date }}</td>
-                                    <td>{{ $row->start_date }}</td>
-                                    <td>{{ $row->end_date }}</td>
+                                    <td><center>{{ $row->name }}</center></td>
+                                    <td>{{ $row->graduated_from }}</td>
                                     <td><center>
-                                            <a href="{{ route('admin.employee.detail', $row->employee->id)}}"><span><i class="fa fa-search"></i></span></a>
-                                            <a href="#"><span><i class="fa fa-pencil"></i></span></a>
+                                            <a href="{{ route('admin.training.form', $row->id)}}"><span><i class="fa fa-plus"></i></span></a>
                                         </center>
                                     </td>
                                 </tr>                            
@@ -64,31 +59,4 @@
 <script>$('#myTable').DataTable({
     "order": [[ 1, "DESC" ]]
 });</script>
-<script>$(document).ready(function() {
-        $('#example').DataTable( {
-            dom: 'Bfrtip',
-            buttons: [
-                {
-                    extend: 'copyHtml5',
-                    exportOptions: {
-                        columns: [ 0, ':visible' ]
-                    }
-                },
-                {
-                    extend: 'excelHtml5',
-                    exportOptions: {
-                        columns: ':visible'
-                    }
-                },
-                {
-                    extend: 'pdfHtml5',
-                    exportOptions: {
-                        columns: [ 0, 1, 2, 5 ]
-                    }
-                },
-                'colvis'
-            ]
-        } );
-    } );
-    </script>
 @endsection

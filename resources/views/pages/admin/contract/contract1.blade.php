@@ -1,0 +1,50 @@
+<p style="text-align: center;"><strong><span style="font-size: 12.0pt;">SURAT PERJANJIAN</span></strong></p>
+<p style="text-align: center;"><span style="font-size: 12.0pt;">No. I</span><span style="font-size: 12.0pt;">II</span><span style="font-size: 12.0pt;">/</span> <span style="font-size: 12.0pt;">SP</span> <span style="font-size: 12.0pt;">/</span> <span style="font-size: 12.0pt;">PT.</span><span style="font-size: 12.0pt;"> WJS </span><span style="font-size: 12.0pt;">/</span> <span style="font-size: 12.0pt;">III</span> <span style="font-size: 12.0pt;">/</span> <span style="font-size: 12.0pt;">201</span><span style="font-size: 12.0pt;">5</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Bandar Lampung, 11 November 2015</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Kami yang bertanda tangan dibawah ini :</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">n</span><span style="font-size: 12.0pt;">ama </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12.0pt;">:</span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12.0pt;">&nbsp;</span><span style="font-size: 12.0pt;">Muhammad Al Gazali, SPd.i.</span></p>
+<p><span style="font-size: 12.0pt;">No. KTP </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12.0pt;">:</span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12.0pt;">&nbsp;</span><span style="font-size: 12.0pt;">2344 1678 1987</span></p>
+<p><span style="font-size: 12.0pt;">Jabatan </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12.0pt;">: </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;General </span><span style="font-size: 12.0pt;">Manajer</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Dalam hal ini bertindak dan atas nama PT. </span><span style="font-size: 12.0pt;">Winando Jaya Sejahtera</span><span style="font-size: 12.0pt;"> selanjutnya disebut sebagai PIHAK PERTAMA.</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Nama </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12.0pt;">:</span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Ananda Fani Anissa, S.Si.</span></p>
+<p><span style="font-size: 12.0pt;">No. KTP </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12.0pt;">: </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2222 3333 1111</span></p>
+<p><span style="font-size: 12.0pt;">Jabatan </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: 12.0pt;">: </span><span style="font-size: 12.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Staff Sekertaris Umum</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Dalam hal ini bertindak dan atas nama </span><span style="font-size: 12.0pt;">pribadi </span><span style="font-size: 12.0pt;">yang selanjutnya disebut sebagai PIHAK KEDUA.</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">PIHAK PERTAMA dan PIHAK KEDUA telah melakukan kesepakatan perjanjian berupa PERJANJIAN KERJA dengan ketentuan sebagai berikut :</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Pasal 1</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">PIHAK PERTAMA akan memberikan </span><span style="font-size: 12.0pt;">wewenang penuh kepada </span><span style="font-size: 12.0pt;">PIHAK KEDUA berupa</span><span style="font-size: 12.0pt;"> otoritas sebagai kepala cabang sementara di PT. Winando Jaya Sejahtera cabang kabupaten Pringsewu.</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Pasal 2</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">PIHAK PERTAMA akan menyediakan </span><span style="font-size: 12.0pt;">segala kebutuhan pribadi PIHAK KEDUA selama menjabat sebagai kepala cabang sementara PT. Wianando Jaya Sejahtera di kabupaten Pringsewu.</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Pasal 3</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">PIHAK PERTAMA akan memberikan </span><span style="font-size: 12.0pt;">insentif kepindahan tempat kerja kepada </span><span style="font-size: 12.0pt;">&nbsp;PIHAK KEDUA sebesar Rp </span><span style="font-size: 12.0pt;">10</span><span style="font-size: 12.0pt;">.000.000 (</span><span style="font-size: 12.0pt;">se</span><span style="font-size: 12.0pt;">puluh juta rupiah)</span><span style="font-size: 12.0pt;"> setelah yang bersangkutan menyelesaikan syarat administrasi kepindahan.</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Pasal 4</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">PIHAK PERTAMA berhak untuk tidak melakukan pembayaran kepada PIHAK KEDUA apabila PIHAK KEDUA tidak menyelesaikan </span><span style="font-size: 12.0pt;">syarat administrasi kepindahan kerja </span><span style="font-size: 12.0pt;">hingga selesai.</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Demikian surat perjanjian ini kami buat tanpa ada paksaaan dari pihak manapun dan atas keinginan kedua belah pihak sendiri.</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Bandar Lampung</span><span style="font-size: 12.0pt;">, 1</span><span style="font-size: 12.0pt;">1 November</span><span style="font-size: 12.0pt;"> 20</span><span style="font-size: 12.0pt;">15</span></p>
+<p><span style="font-size: 12.0pt;">Yang membuat perjanjian,</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">PIHAK PERTAMA &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="font-size: 12.0pt;">&nbsp;</span><span style="font-size: 12.0pt;">&nbsp;PIHAK KEDUA</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp;</span></p>
+<p><span style="font-size: 12.0pt;">Muhammad Al Gazali, SPd.i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ananda Fani Anissa, S.Si.</span></p>
+<p><span style="font-size: 12.0pt;">&nbsp; (General Manajer)</span><span style="font-size: 12.0pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> <span style="font-size: 12.0pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 12.0pt;">(Staff Sekertaris Umum)</span></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;"><span style="text-decoration: underline;"><strong>Aku</strong></span></p> 

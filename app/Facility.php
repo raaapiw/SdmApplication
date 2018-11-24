@@ -11,8 +11,11 @@ class Facility extends Model
 
         'contract_id',
         'facility',
+        'state'
     ];
+
     public function contract(){
         return $this->belongsTo(Contract::class);
     }
+    
 }

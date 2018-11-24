@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('material/images/head-logo.png')}}">
-    <title>Verifikasi Smelter SI</title>
+    <title>Pengawasan produksi Batubara</title>
     <!-- Bootstrap Core CSS -->
     {{--  <link href="../material/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">  --}}
     <link href="{{ asset('material/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -63,7 +63,7 @@
         
         <div class="form-group text-center m-t-20">
           <div class="col-xs-12">
-            <button class="btn btn-success btn-lg btn-block text-uppercase waves-effect waves-light" type="submit" style="background-color:#007eed">Log In</button>
+            <button class="btn btn-success btn-lg btn-block text-uppercase waves-effect waves-light" type="submit" style="background-color:red">Log In</button>
           </div>
         </div>
         {{-- <div class="row">

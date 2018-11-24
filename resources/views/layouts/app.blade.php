@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +20,7 @@
     <!-- Custom CSS -->
     <link href="{{ asset('material/css/style.css') }}" rel="stylesheet">
     <!-- You can change the theme colors from here -->
-    <link href="{{ asset('material/css/colors/blue.css') }}" id="theme" rel="stylesheet">
+    <link href="{{ asset('material/css/colors/red.css') }}" id="theme" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -335,30 +334,32 @@
                             <ul id="sidebarnav">
                                 <li class="nav-small-cap">Admin</li>
                                 <li>
-                                    <a href="{{ route('admin.dashboard')}}" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Dashboard</span></a>
+                                    <a href="{{ route('admin.dashboard')}}" aria-expanded="false"><i class="fa fa-dashboard"></i><span class="hide-menu">Dashboard</span></a>
                                 </li>
                                 <li>
-                                    <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Karyawan</span></a>
+                                    <a href="{{ route('admin.dataMaster')}}" aria-expanded="false"><i class="fa fa-database"></i><span class="hide-menu">Data Master</span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Pegawai</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="{{ route('admin.employee.create')}}">Tambah Karyawan</a></li>
-                                        <li><a href="#">Perpanjang Kontrak Kar</a></li>
-                                        <li><a href="{{ route('admin.employee.list')}}">Daftar Karyawan</a></li>
+                                        <li><a href="{{ route('admin.employee.create')}}">Tambah Pegawai</a></li>
+                                        <li><a href="{{ route('admin.employee.list')}}">Daftar Pegawai</a></li>
                                         
                                     </ul>
                                 </li>
-                                <li>
-                                    <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Kontrak</span></a>
+                                {{-- <li>
+                                    <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-file"></i><span class="hide-menu">Kontrak</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">Tambah Kontrak</a></li>
-                                        <li><a href="#">Daftar Kontrak</a></li>
-                                       
+                                        <li><a href="{{ route('admin.contract.addNew')}}">Tambah Kontrak <br>Baru</a></li>
+                                        <li><a href="{{ route('admin.contract.addRenew')}}">Perpanjang Kontrak <br></a></li>
+                                        <li><a href="{{ route('admin.contract.list')}}">History Kontrak</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li>
-                                    <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Laporan</span></a>
+                                    <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-drivers-license"></i><span class="hide-menu">Training</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="#">Buat Laporan</a></li>
-                                        <li><a href="#">Daftar Laporan</a></li>
+                                        {{-- <li><a href="{{ route('admin.training.add')}}">Tambah Training <br>Baru</a></li> --}}
+                                        <li><a href="{{ route('admin.training.list')}}">Daftar Training</a></li>
                                        
                                     </ul>
                                 </li>
