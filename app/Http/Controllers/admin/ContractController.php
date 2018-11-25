@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use \Input as Input;
 use App\Employee;
 use App\Contract;
+use PDF;
 
 class ContractController extends Controller
 {
@@ -146,5 +147,17 @@ class ContractController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function print($id)
+    {
+        // Fetch selected contract from database
+        $data = Contract::find($id);
+        // Send data to the view using loadView function of PDF facade
+        $pdf = PDF::loadView('pages.pdf.contract1', $data);
+        // If you want to store the generated pdf to the server then you can use the store function
+        $pdf->save(storage_path().'_filename.pdf');
+        // Finally, you can download the file using download function
+        return $pdf->stream('contract1.pdf');
     }
 }

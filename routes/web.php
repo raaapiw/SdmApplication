@@ -38,7 +38,7 @@ Route::group(['middleware' => 'admin'], function() {
     Route::post('/admin/contract/store', 'admin\ContractController@store') ->name('admin.contract.store');
     Route::post('/admin/contract/update/{id}', 'admin\ContractController@update') ->name('admin.contract.update');
     Route::get('/admin/contract/edit/{id}', 'admin\ContractController@edit')->name('admin.contract.edit');
-    Route::get('/admin/contract/print/{id}', 'admin\ContractController@edit')->name('admin.contract.edit');
+    Route::get('/admin/contract/print/{id}', 'admin\ContractController@print')->name('admin.contract.print');
     
     Route::get('/admin/training/add', 'admin\TrainingController@add')->name('admin.training.add');
     Route::get('/admin/training/list', 'admin\TrainingController@list')->name('admin.training.list');

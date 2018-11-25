@@ -148,7 +148,7 @@
                                                 <td>{{$row->name}}</td>
                                                 <td>{{$row->start_date}}</td>
                                                 <td>{{$row->end_date}}</td>
-                                                <td>#</td>
+                                                <td><a target=__blank href="{{ route('admin.contract.print', $row->id) }}"><span><i class="fa fa-pencil"></i></span></a></td>
                                                 <td><a href="{{ route('admin.contract.edit', $row->id) }}"><span><i class="fa fa-pencil"></i></span></a></td>  
                                             </tr>
                                         </tbody>                        
