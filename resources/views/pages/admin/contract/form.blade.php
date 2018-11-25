@@ -120,80 +120,52 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <h3 class="card-title">Fasilitas</h3>
-                                                        <div>
-                                                            <input type="checkbox" id="scales" name="facility[]"
-                                                                    value="scales" checked />
-                                                            <label for="scales">Mobil</label>
-                                                        </div>
-                                                    
-                                                        <div>
-                                                            <input type="checkbox" id="horns" name="facility[]"
-                                                                    value="horns" />
-                                                            <label for="horns">Rumah</label>
-                                                        </div>
-                                                    
-                                                        <div>
-                                                            <input type="checkbox" id="claws" name="facility[]"
-                                                                    value="claws" />
-                                                            <label for="claws">Transport</label>
-                                                        </div>
-    
-                                                        <div>
-                                                            <input type="checkbox" id="ed" name="facility[]"
-                                                                    value="claws" />
-                                                            <label for="claws">Makan</label>
-                                                        </div>
-    
-                                                        <div>
-                                                            <input type="checkbox" id="claws" name="facility[]"
-                                                                    value="claws" />
-                                                            <label for="claws">Kacamata</label>
-                                                        </div>
-    
-                                                        <div>
-                                                            <input type="checkbox" id="claws" name="facility[]"
-                                                                    value="claws" />
-                                                            <label for="claws">Bensin</label>
-                                                        </div>   
                                                             <div id="cblist">
-                                                                <input type="checkbox" value="first checkbox" id="cb1" /> <label for="cb1">first checkbox</label>
-                                                                <br>
-                                                            </div>
+                                                                <div>
+                                                                    <input type="checkbox" id="scales" name="facility[]"
+                                                                            value="scales" checked />
+                                                                    <label for="scales">Mobil</label>
+                                                                </div>
                                                             
-                                                            <input type="text" id="txtName" />
-                                                            <input type="button" value="tambah" id="btnSave" />
-                                                            <br>
-                                                                            
-                                                            {{-- <ul id="ul"> </ul>           --}}
-                                                        {{-- <div class="col-md-4" id="check">
-                                                            <input type="text" id="texto" value=""/>
-                                                            <br>
-                                                            <br> 
-                                                            <button name="add" id="add" type="button" class="btn btn-block btn-info" data-count="0">
-                                                            +Tambah Fasilitas</button>                                                                                                                    
-                                                        </div> --}}
-
-                                                        {{-- <p>Click the buttons to create a Checkbox.</p> --}}
-
-                                                        {{-- <button name="add" id="add" onclick="addCheckBox()">Create a button</button>
-                                                        <input id="check" name="checkBoxes"> --}}
-
-                                                        {{-- <div id="checkBoxes"></div> --}}
+                                                                <div>
+                                                                    <input type="checkbox" id="horns" name="facility[]"
+                                                                            value="horns" />
+                                                                    <label for="horns">Rumah</label>
+                                                                </div>
+                                                            
+                                                                <div>
+                                                                    <input type="checkbox" id="claws" name="facility[]"
+                                                                            value="claws" />
+                                                                    <label for="claws">Transport</label>
+                                                                </div>
+            
+                                                                <div>
+                                                                    <input type="checkbox" id="ed" name="facility[]"
+                                                                            value="claws" />
+                                                                    <label for="claws">Makan</label>
+                                                                </div>
+            
+                                                                <div>
+                                                                    <input type="checkbox" id="claws" name="facility[]"
+                                                                            value="claws" />
+                                                                    <label for="claws">Kacamata</label>
+                                                                </div>
+            
+                                                                <div>
+                                                                    <input type="checkbox" id="claws" name="facility[]"
+                                                                            value="claws" />
+                                                                    <label for="claws">Bensin</label>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        <input type="text" id="txtName" />
+                                                        <input type="button" value="Tambah" id="btnSave" />
                                                     </div>
                                                 </div>                                                
                                             </div>    
                                         </div>                                         
                                         <br>
                                         <hr>
-                                        {{-- <div class="row">
-                                            <div class="col-md-12">
-                                                <center>
-                                                    <button name="add" id="add" type="button" class="btn btn-block btn-info" data-count=0>Tambah Fasilitas</button>
-                                                </center>
-                                                <br>
-                                                <br>
-                                            </div>
-                                        </div> --}}
                                         <br>
                                         <br>
                                         <button type="submit" class="btn btn-success" value="upload"><i class="fa fa-check"></i> Submit</button>
@@ -221,8 +193,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#btnSave').click(function() {
-            addCheckbox($('#txtName').val());
-            document.write("\n");            
+            addCheckbox($('#txtName').val());      
         });
     });
     
@@ -233,6 +204,7 @@
     
        $('<input />', { type: 'checkbox', id: 'cb'+id, value: name }).appendTo(container);
        $('<label />', { 'for': 'cb'+id, text: name }).appendTo(container);
+       $('<br>').appendTo(container);
          
 
     }
@@ -241,17 +213,17 @@
 <script src="{{ asset('material/plugins/dropify/dist/js/dropify.min.js')}}"></script>
 <script>
 function changeContract(e) {
-    if (e.target.value == "k1") {
-        document.getElementById("gaji").value = setSalary("10000");
-        document.getElementById("tunkin").value = setSalary("10000");
+    if (e.target.value == "k1" && e.target.value = {{ }}) {
+        document.getElementById("gapok").value = setSalary("10000");
+        document.getElementById("tunkin").value = setSalary("150000");
         document.getElementById("tunjab").value = setSalary("10000");
         document.getElementById("tunpresjab").value = setSalary("10000");
         document.getElementById("ed").checked = true;
     }
     else if (e.target.value == "k2")
-        document.getElementById("gaji").value = setSalary("20000");
+        document.getElementById("gapok").value = setSalary("20000");
     else
-        document.getElementById("gaji").value = setSalary("50000");
+        document.getElementById("gapok").value = setSalary("50000");
 }
 </script>
 {{-- <script>
