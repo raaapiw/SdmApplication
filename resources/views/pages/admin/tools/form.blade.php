@@ -20,7 +20,7 @@
     <div class="col-lg-12">
         <div class="card card-outline-info">
             <div class="card-body">
-                <form action="{{ isset($defaultContract) ? route('admin.defaultContract.update', $defaultContract->id) : route('admin.defaultContract.store')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{ isset($defaultContract) ? route('admin.tools.update', $defaultContract->id) : route('admin.tools.store')}}" method="POST" enctype="multipart/form-data">
                     {{-- <input type="hidden" name="order_id" value="{{ $employee->id}}"> --}}
                     <div class="form-body">
                         <div class="row">
@@ -33,12 +33,12 @@
                                         <br>
                                         <hr>
                                         <h3 class="card-title">Jabatan</h3>                                                                               
-                                        <input type="text" id="id" class="form-control custom-select" name="name" placeholder="{{ $defaultContract->jabatan}}" >
+                                        <input type="text" id="id" class="form-control custom-select" name="jabatan" placeholder="{{ $defaultContract->jabatan}}" >
                                         <br>
                                         <br>
                                         <hr>
                                         <h3 class="card-title">Lulusan</h3>                                                                               
-                                        <input type="text" id="id" class="form-control custom-select" name="name" placeholder="{{ $defaultContract->degree}}" >
+                                        <input type="text" id="id" class="form-control custom-select" name="degree" placeholder="{{ $defaultContract->degree}}" >
                                         <br>
                                         <br>
                                         <hr>
@@ -47,27 +47,27 @@
                                                 <h3 class="card-title">Gaji</h3>
                                                 <label>Gaji Pokok</label>
                                                 <br>
-                                                    Rp <input type="text" pattern="[0-9]*" id="gapok" name="gapok" />
+                                                    Rp <input type="text" pattern="[0-9]*" id="gapok" name="gapok"  placeholder="{{isset($defaultContract) ? $defaultContract->gapok : '' }}"/>
                                                 <br>
                                                 <br>
                                                 <label>Tunjangan Kinerja</label>
                                                 <br>
-                                                    Rp <input type="text" id="tunkin" pattern="[0-9]*" name="tunkin" />
+                                                    Rp <input type="text" id="tunkin" pattern="[0-9]*" name="tunkin"  placeholder="{{isset($defaultContract) ? $defaultContract->tunkin : '' }}"/>
                                                 <br>
                                                 <br>
                                                 <label>Tunjangan Jabatan</label>
                                                 <br>
-                                                    Rp <input type="text" id="tunjab" name="tunjab" pattern="[0-9]*" />
+                                                    Rp <input type="text" id="tunjab" name="tunjab" pattern="[0-9]*"  placeholder="{{isset($defaultContract) ? $defaultContract->tunjab : '' }}" />
                                                 <br>
                                                 <br>
                                                 <label>Tunjangan Prestasi Jabatan</label>
                                                 <br>
-                                                    Rp <input type="text" id="tunpresjab" name="tunpresjab" pattern="[0-9]*"/>
+                                                    Rp <input type="text" id="tunpresjab" name="tunpresjab" pattern="[0-9]*" placeholder="{{isset($defaultContract) ? $defaultContract->tunpresjab : '' }}"/>
                                                 <br>
                                                 <br>
                                                 <label>Total Gaji</label>
                                                 <br>
-                                                    Rp <input type="text" id="total" name="gatot" pattern="[0-9]*"/>
+                                                    Rp <input type="text" id="total" name="gatot" pattern="[0-9]*" />
                                                 <br>
                                                 <br>
                                             </div>                                           

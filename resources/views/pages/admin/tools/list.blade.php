@@ -40,7 +40,7 @@
                                     <td>{{ $row->jabatan }}</td>
                                     <td>{{ $row->degree }}</td>
                                     <td><center>
-                                            <a href="{{ route('admin.employee.detail', $row->id)}}"><span><i class="fa fa-search"></i></span></a>
+                                            <a href="{{ route('admin.tools.form', $row->id)}}"><span><i class="fa fa-search"></i></span></a>
                                             <a href="#"><span><i class="fa fa-pencil"></i></span></a>
                                         </center>
                                     </td>
