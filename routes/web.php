@@ -49,6 +49,8 @@ Route::group(['middleware' => 'admin'], function() {
     
     Route::get('/admin/data_master', 'admin\UserController@dataMaster') ->name('admin.dataMaster');
     
+    Route::get('/admin/tools/defaultContract', 'admin\defaultContractController@list') ->name('admin.tools.default');
+
     // Route::get('/admin/employee/detail/{id}', 'admin\EmployeeController@detail') ->name('admin.employee.detail');
     
 });
