@@ -37,11 +37,10 @@
                                 <tr>
                                     <td><center>{{$key+1}}</center></td>
                                     <td><center>{{ $row->name }}</center></td>
-                                    <td>{{ $row->jabatan }}</td>
-                                    <td>{{ $row->degree }}</td>
+                                    <td><center>{{ $row->jabatan }}</center></td>
+                                    <td><center>{{ $row->degree }}</center></td>
                                     <td><center>
-                                            <a href="{{ route('admin.tools.form', $row->id)}}"><span><i class="fa fa-search"></i></span></a>
-                                            <a href="#"><span><i class="fa fa-pencil"></i></span></a>
+                                            <a href="{{ route('admin.tools.form', $row->id)}}"><span><i class="fa fa-pencil"></i></span></a>
                                         </center>
                                     </td>
                                 </tr>                                                            

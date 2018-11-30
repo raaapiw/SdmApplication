@@ -208,7 +208,6 @@
          
 
     }
-
 </script>
 <script src="{{ asset('material/plugins/dropify/dist/js/dropify.min.js')}}"></script>
 <script>
@@ -225,36 +224,6 @@ function changeContract(e) {
     else
         document.getElementById("gapok").value = setSalary("50000");
 }
-</script>
-{{-- <script>
-    $(document).ready(function () {
-    $(".btn").on('click', function () {
-        $('#check').append('<input type="checkbox" name="myCheckbox" />' + $(".txt").val());
-    });
-});
-</script> --}}
-<script>
-   $(document).on("click","#add",function(){
-    var claw = document.getElementById('claws'); //ul
-    // var li = document.createElement('input');//li
-
-    var checkbox = document.createElement('input');
-        checkbox.type = "checkbox";
-        checkbox.value = 1;
-        checkbox.name = "facility";
-        checkbox.id = "id";
-
-    var label = document.createElement('label');
-    label.htmlFor = "id";
-    label.appendChild(document.createTextNode('text for label after checkbox'));
-
-    claw.appendChild(checkbox);
-    claw.appendChild(label);
-   });
-    
-    // var text = document.getElementById('texto');
-    // claw.appendChild(document.createTextNode(text.value));
-    // claw.appendChild(li); 
 </script>
 {{-- <script>
     function addCheckBox() {
