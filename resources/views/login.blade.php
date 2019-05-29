@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('material/images/head-logo.png')}}">
-    <title>Pengawasan produksi Batubara</title>
+    <title>SDM MinBa</title>
     <!-- Bootstrap Core CSS -->
     {{--  <link href="../material/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">  --}}
     <link href="{{ asset('material/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -37,7 +37,7 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <section id="wrapper" class="login-register login-sidebar"  style="background-image:url({{ asset('material/images/background/masker.jpg')}});">
+    <section id="wrapper" class="login-register login-sidebar"  style="background-image:url({{ asset('material/images/background/new.jpg')}});">
   <div class="login-box card">
     <div class="card-body">
       <form class="form-horizontal form-material" id="loginform" action="{{ route('postLogin') }}" method="POST">
@@ -72,7 +72,7 @@
           </div>
         </div> --}}
       </form>
-      <form class="form-horizontal" id="recoverform" action="index.html">
+      {{-- <form class="form-horizontal" id="recoverform" action="index.html">
         <div class="form-group ">
           <div class="col-xs-12">
             <h3>Recover Password</h3>
@@ -89,7 +89,7 @@
             <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Reset</button>
           </div>
         </div>
-      </form>
+      </form> --}}
     </div>
   </div>
 </section>

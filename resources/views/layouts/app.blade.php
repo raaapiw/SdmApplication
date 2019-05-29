@@ -13,7 +13,7 @@
     
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('material/images/head-logo.png') }}">
-    <title>Verifikasi Smelter SI</title>
+    <title>SDM MinBa</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('material/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     @yield('style')
@@ -362,6 +362,9 @@
                                         <li><a href="{{ route('admin.training.list')}}">Daftar Training</a></li>
                                        
                                     </ul>
+                                </li>
+                                <li>
+                                    <a href="{{ route('admin.tools.default')}}" aria-expanded="false"><i class="fa fa-gear"></i><span class="hide-menu">Standar Kontrak</span></a>
                                 </li>
                                 {{-- <li>
                                     <a class="has-arrow " href="#" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Patient</span></a>

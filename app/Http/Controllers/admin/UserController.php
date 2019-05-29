@@ -20,7 +20,7 @@ class UserController extends Controller
     public function dataMaster(){
         $employee = Employee::all();
 
-        return view('pages.admin.master');
+        return view('pages.admin.master', compact('employee'));
     }
 
     public function detail($id){

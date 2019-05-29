@@ -3,12 +3,12 @@
 @section('style')
 <link href="{{ asset('material/plugins/sweetalert/sweetalert.css')}}" rel="stylesheet" type="text/css"/>
 
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+{{-- <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css"> --}}
 @endsection
 
 @section('breadcumb')
@@ -69,7 +69,7 @@
                                 <th rowspan="2" class="text-center">Alamat</th>
                                 <th colspan="2" class="text-center">Kelahiran</th>
                                 <th rowspan="2" class="text-center">Agama</th>
-                                <th colspan="8" class="text-center">Data Keluarga</th>>
+                                <th colspan="8" class="text-center">Data Keluarga</th>
                                 <th rowspan="2" class="text-center">email</th>
                             </tr>
                             <tr>
@@ -116,6 +116,74 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <center>
+                                @foreach($employee as $key => $row)
+                                    <tr>
+                                        <td>{{$key+1}}</td>
+                                        <td>{{$row->payroll}}</td>
+                                        <td>{{$row->nik}}</td>
+                                        <td>{{$row->name}}</td>
+                                        <td>{{$row->jabatan}}</td>
+                                        <td>{{$row->wilayah}}</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>   
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>                           
+                                @endforeach
+                            </center>
                         </tbody>
                         <tfoot>
                             <tr>
@@ -220,16 +288,7 @@
             },
             'colvis'
         ],
-  "autoWidth": false
-
-            // fixedColumns: {
-            // leftColumns: 2
-            // },
-            // scrollY:        "300px",
-            // scrollX:        true,
-            // scrollCollapse: true,
-		    // paging:         false,
-            // fixedColumns:   true,    
+//   "autoWidth": true  
     });
 });
 </script>
@@ -267,10 +326,10 @@
 {{-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> --}}
 <script type='text/javascript' src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js"></script>
 
-<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>
+{{-- <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script> --}}
 
 {{-- <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script> --}}
 
-<script type="text/javascript" src="/media/js/site.js?_=5e8f232afab336abc1a1b65046a73460"></script>
-<script type="text/javascript" src="/media/js/dynamic.php?comments-page=extensions%2Ffixedcolumns%2Fexamples%2Fstyling%2Fbootstrap.html" async></script>
+{{-- <script type="text/javascript" src="/media/js/site.js?_=5e8f232afab336abc1a1b65046a73460"></script>
+<script type="text/javascript" src="/media/js/dynamic.php?comments-page=extensions%2Ffixedcolumns%2Fexamples%2Fstyling%2Fbootstrap.html" async></script> --}}
 @endsection

@@ -49,6 +49,11 @@ Route::group(['middleware' => 'admin'], function() {
     
     Route::get('/admin/data_master', 'admin\UserController@dataMaster') ->name('admin.dataMaster');
     
+    Route::get('/admin/tools/defaultContract', 'admin\defaultContractController@list') ->name('admin.tools.default');
+    Route::get('/admin/tools/form/{id}', 'admin\defaultContractController@form') ->name('admin.tools.form');
+    Route::post('/admin/tools/store', 'admin\defaultContractController@store') ->name('admin.tools.store');
+    Route::post('/admin/tools/update/{id}', 'admin\defaultContractController@update') ->name('admin.tools.update');
+    
     // Route::get('/admin/employee/detail/{id}', 'admin\EmployeeController@detail') ->name('admin.employee.detail');
     
 });
