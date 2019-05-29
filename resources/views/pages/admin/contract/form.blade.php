@@ -42,6 +42,7 @@
                                                             <br>
                                                         </div>
                                                     </div>
+                                                    <br>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <label>Alamat</label>
@@ -53,124 +54,152 @@
                                                             <input disabled type="text" name="nik" required class="form-control" value="{{ isset($employee) ? $employee->nik : ''}}" placeholder="{{ isset($employee) ? $employee->nik : ''}}"/>
                                                             <br>
                                                         </div>
-                                                    </div>                                                    
-                                                    <br>
+                                                    </div>    
                                                 </div>
                                             </div>
                                         <br>                                        
                                         <hr>
                                         <h3 class="card-title">Jenis Kontrak</h3>                                                                               
-                                        <select id="id" class="form-control custom-select" name="contract" onchange="changeContract(event)" >                  
+                                        <select id="id" class="form-control custom-select" name="name" onchange="changeContract(event)" >                  
                                             <option disabled selected>Pilih Kontrak</option>
-                                            <option   value="k1">Kontrak  1 </option>
-                                            <option   value="k2">Kontrak 2 </option>
-                                            <option   value="k3">Kontrak 3 </option>
-                                            <option   value="k4">Kontrak 4 </option>
-                                            <option   value="k5">Kontrak 5 </option>
-                                            <option   value="k6">Kontrak 6 </option>
-                                            <option   value="k7">Kontrak 7 </option>
-                                            <option   value="k8">Kontrak 8 </option>
-                                            <option   value="k9">Kontrak 9 </option>
-                                            <option   value="k10">Kontrak 10 </option>
-                                            <option   value="k11">Kontrak 11 </option>
-                                            <option   value="k12">Kontrak 12 </option>
-                                            <option   value="k13">Kontrak 13 </option>
-                                            <option   value="k14">Kontrak 14 </option>
-                                            <option   value="k15">Kontrak 15 </option>
-                                            <option   value="k16">Kontrak 16 </option>
-                                            <option   value="k17">Kontrak 17 </option>
-                                            <option   value="k18">Kontrak 18 </option>
-                                            <option   value="k19">Kontrak 19 </option>
-                                            <option   value="k20">Kontrak 20 </option>
+                                            <option value="k1">Kontrak Tahun ke-1</option>
+                                            <option value="k2">Kontrak Tahun ke-2</option>
+                                            <option value="k3">Kontrak Tahun ke-3</option>
+                                            <option value="k4">Kontrak Tahun ke-4</option>
+                                            <option value="k5">Kontrak Tahun ke-5</option>
+                                            <option value="k6">Kontrak Tahun ke-6</option>
+                                            <option value="k7">Kontrak Tahun ke-7</option>
+                                            <option value="a1">Adendum Prestasi</option>
+                                            <option value="a2">Adendum Umum</option>
+                                            <option value="ta1">Tenaga Ahli per Termin</option>
+                                            <option value="ta2">Tenaga Ahli per Bulan</option>
+                                            <option value="ta3">Undangan Teknis TA</option>
+                                            {{-- {{ $test = false }}
+                                            @foreach($defaultContract as $row)
+
+                                                <option value="{{$row->id}}" {{ $test==true ? "selected" : "" }}>{{$row->name}}</option> --}}
+                                                {{-- @if($employee->contract->id == $row->id)
+                                                    {{ $test=true}} --}}
+                                            {{-- @endforeach --}}
                                         </select>
                                         <br>
                                         <br>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <label>Tanggal Mulai Kontrak</label>
+                                                <br>
+                                                <input type="date" name="start_date" class="form-control"  />   
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label visible="false"></label>
+                                                <br>
+                                                <center>
+                                                -
+                                                </center>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <label>Tanggal Berakhir Kontrak</label>
+                                                <br>
+                                                <input type="date" name="end_date" class="form-control"  />           
+                                            </div>
+                                        </div>
                                         <br>
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <h3 class="card-title">Gaji</h3>
-                                                <label>Gaji Pokok</label>
-                                                <br>
-                                                    Rp <input type="text" pattern="[0-9]*" id="gapok" name="gapok" />
-                                                    <br>
-                                                    <br>
-                                                <label>Tunjangan Kinerja</label>
-                                                <br>
-                                                    Rp <input type="text" id="tunkin" pattern="[0-9]*" name="tunkin" />
-                                                    <br>
-                                                    <br>
-                                                <label>Tunjangan Jabatan</label>
-                                                <br>
-                                                    Rp <input type="text" id="tunjab" name="tunjab" pattern="[0-9]*" />
-                                                    <br>
-                                                    <br>
-                                                <label>Tunjangan Prestasi Jabatan</label>
-                                                <br>
-                                                    Rp <input type="text" id="tunpresjab" name="tunpresjab" pattern="[0-9]*"/>
-                                                <br>
-                                                <br>
-                                                <label>Total Gaji</label>
-                                                <br>
-                                                    Rp <input type="text" id="total" name="gatot" pattern="[0-9]*"/>
-                                                <br>
-                                                <br>
+                                                <div id="rupiah">
+                                                    <h3 class="card-title">Gaji</h3>
+                                                    <div class="form-group">
+                                                        <label>Gaji Pokok</label>
+                                                        <br>
+                                                        <input type="text" maxlength="9" id="gapok" name="gapok" class="form-control prc"  />   
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Tunjangan Kinerja</label>
+                                                        <br>
+                                                        <input type="text" pattern="[0-9]*" id="tunkin" name="tunkin" class="form-control prc"/>       
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Tunjangan Jabatan</label>
+                                                        <br>
+                                                            <input type="text" name="tunjab" id="tunjab" pattern="[0-9]*" class="form-control prc"/> 
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Tunjangan Prestasi Jabatan</label>
+                                                        <br>
+                                                            <input type="number" name="tunpresjab" id="tunpresjab" pattern="[0-9]*" class="form-control prc"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Total Gaji</label>
+                                                        <br>
+                                                        Rp <output type="text" id="total" name="gatot" pattern="[0-9]*" />        
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-6">                                                
+                                            {{-- <div class="col-md-6">                                                
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <h3 class="card-title">Fasilitas</h3>
                                                             <div id="cblist">
                                                                 <div>
                                                                     <input type="checkbox" id="scales" name="facility[]"
-                                                                            value="scales" checked />
+                                                                            value="mobil" checked />
                                                                     <label for="scales">Mobil</label>
                                                                 </div>
                                                             
                                                                 <div>
                                                                     <input type="checkbox" id="horns" name="facility[]"
-                                                                            value="horns" />
+                                                                            value="rumah" />
                                                                     <label for="horns">Rumah</label>
                                                                 </div>
                                                             
                                                                 <div>
-                                                                    <input type="checkbox" id="claws" name="facility[]"
-                                                                            value="claws" />
-                                                                    <label for="claws">Transport</label>
+                                                                    <input type="checkbox" id="transport" name="facility[]"
+                                                                            value="transport" />
+                                                                    <label for="transport">Transport</label>
                                                                 </div>
             
                                                                 <div>
-                                                                    <input type="checkbox" id="ed" name="facility[]"
-                                                                            value="claws" />
-                                                                    <label for="claws">Makan</label>
+                                                                    <input type="checkbox" id="makan" name="facility[]"
+                                                                            value="makan" />
+                                                                    <label for="makan">Makan</label>
                                                                 </div>
             
                                                                 <div>
-                                                                    <input type="checkbox" id="claws" name="facility[]"
-                                                                            value="claws" />
-                                                                    <label for="claws">Kacamata</label>
+                                                                    <input type="checkbox" id="kacamata" name="facility[]"
+                                                                            value="kacamata" />
+                                                                    <label for="kacamata">Kacamata</label>
                                                                 </div>
             
                                                                 <div>
-                                                                    <input type="checkbox" id="claws" name="facility[]"
-                                                                            value="claws" />
-                                                                    <label for="claws">Bensin</label>
+                                                                    <input type="checkbox" id="bensin" name="facility[]"
+                                                                            value="bensin" />
+                                                                    <label for="bensin">Bensin</label>
                                                                 </div>
-                                                            </div>
-                                                        
-                                                        <input type="text" id="txtName" />
+                                                            </div>                                                        
+                                                        <input type="text" id="txtName"x/>
                                                         <input type="button" value="Tambah" id="btnSave" />
                                                     </div>
                                                 </div>                                                
-                                            </div>    
+                                            </div>     --}}
                                         </div>                                         
                                         <br>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h3 class="card-title">File Kontrak</h3>
+                                                    <input type="file" class="form-control" id="waktu" name="evidence" required >
+                                                </div>
+                                            </div>
+                                        </div>
                                         <hr>
                                         <br>
                                         <br>
                                         <button type="submit" class="btn btn-success" value="upload"><i class="fa fa-check"></i> Submit</button>
                                         <a class="btn btn-inverse btn-close" href="{{ url()->previous() }}">Cancel</a>
-                                        <a class="btnrp btn-success" href="#">Xprint</a>
                                     </div>
                                 </div>
                             </div>
@@ -185,11 +214,21 @@
 @endsection
 
 @section('script')
-<script>
+{{-- <script>
+    $(document).ready(function(){
+        $('#gapok').priceFormat({
+        prefix: '',
+        thousandsSeparator:'.',
+        centsLimit: 0,
+        clearOnEmpty: true
+        });
+    });
+</script> --}}
+{{-- <script>
     $(document).ready(function() {
             $('.btnrp').printPage();      
         });
-</script>
+</script> --}}
 <script type="text/javascript">
     $(document).ready(function() {
         $('#btnSave').click(function() {
@@ -210,47 +249,22 @@
     }
 </script>
 <script src="{{ asset('material/plugins/dropify/dist/js/dropify.min.js')}}"></script>
+<script src="{{ asset('material/js/jquery.priceformat.min.js')}}"></script>
 <script>
 function changeContract(e) {
-    if (e.target.value == "k1" && e.target.value = {{ }}) {
+    if (e.target.value == "1") {
         document.getElementById("gapok").value = setSalary("10000");
         document.getElementById("tunkin").value = setSalary("150000");
         document.getElementById("tunjab").value = setSalary("10000");
         document.getElementById("tunpresjab").value = setSalary("10000");
-        document.getElementById("ed").checked = true;
+        document.getElementById("horns").checked = true;
     }
-    else if (e.target.value == "k2")
+    else if (e.target.value == "2")
         document.getElementById("gapok").value = setSalary("20000");
     else
         document.getElementById("gapok").value = setSalary("50000");
 }
 </script>
-{{-- <script>
-    function addCheckBox() {
-
-var ColorsAvailable = document.getElementById('checkBoxes');
-var check_value = new Array();
-check_value[0] = "Yellow";
-check_value[1] = "Red";
-check_value[2] = "Green";
-
-var color, p, br;
-
-for(var count in check_value)
-{
-  color=document.createElement("input");   
-  color.value=(check_value[count] + '</br>');
-  color.type="checkbox";
-  color.id="color" + count;
-  p =document.createElement("span");
-  p.innerHTML = check_value[count] + ": ";
-  br =document.createElement("br");
-  ColorsAvailable.appendChild(p);
-  ColorsAvailable.appendChild(color);
-  ColorsAvailable.appendChild(br);
-}
-}
-</script> --}}
 <script>
 $( document ).ready(function() {
     $('.dropify').dropify();
@@ -266,32 +280,58 @@ function setSalary(salary) {
     return salary
 }
 </script>
-{{-- <script>
-        $( document ).ready(function() {
-            var i = 0;
-            n = i+2;
-            // i = $(this).attr("data-count");
-            // console.log(i);
-            $(document).on("click","#add",function() {
-                $('#dynamic_field').append('<div class="row" id="row'+i+'"><div class="col-md-12"><div class="col-md-12"><br><br><h3 class="card-title">Fasilitas Ke-'+n+'</h3><input type="text" id="file" name="facility[]" class="dropify" required/></div><div class="col-md-12"><div class="form-group"><button type="button" name="btn_remove" id="'+i+'" class="btn btn-danger btn_remove">Clear</button></div></div></div></div>');
-                i++;
-                n++;
-                // $(".select2").select2();
-                // $(".vertical-spin").TouchSpin({
-                //     verticalbuttons: true,
-                //     verticalupclass: 'ti-plus',
-                //     verticaldownclass: 'ti-minus',
-                // });
-            });
-            
-            $(document).on("click", ".btn_remove", function(){  
-                   var button_id = $(this).attr('id');   
-                   $('#row'+button_id+'').remove();  
-            });
-    
-            
-         });
-</script>  --}}
+{{-- <script type="text/javascript">
+    function total() {
+    var gapok = parseInt(document.getElementByName('gapok').value);
+    var tunkin = parseInt(document.getElementByName('tunkin').value);
+    var tunjab = parseInt(document.getElementByName('tunjab').value);
 
-  
+    var jumlah_harga = gapok + tunkin + tunjab;
+
+    document.getElementByName('gatot').value = jumlah_harga;
+    }
+    
+</script> --}}
+
+<script>
+    $('.form-group').on('input','.prc',function(){
+        var totalSum = 0;
+        $('.form-group .prc').each(function(){
+            var inputVal = $(this).val();
+            if($.isNumeric(inputVal)){
+                totalSum += parseFloat(inputVal);
+            }
+        });
+        $('#total').text(totalSum);
+    });
+</script>
+{{-- <script type="text/javascript">
+		
+    var rupiah = document.getElementById('rupiah');
+    rupiah.addEventListener('keyup', function(e){
+        // tambahkan 'Rp.' pada saat form di ketik
+        // gunakan fungsi formatRupiah() untuk mengubah angka yang di ketik menjadi format angka
+        rupiah.value = formatRupiah(this.value, 'Rp. ');
+    });
+
+    /* Fungsi formatRupiah */
+    function formatRupiah(angka, prefix){
+        var number_string = angka.replace(/[^,\d]/g, '').toString(),
+        split   		= number_string.split(','),
+        sisa     		= split[0].length % 3,
+        rupiah     		= split[0].substr(0, sisa),
+        ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
+
+        // tambahkan titik jika yang di input sudah menjadi angka ribuan
+        if(ribuan){
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+
+        rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+    }
+</script> --}}
+    
+
 @endsection

@@ -8,6 +8,7 @@ class Contract extends Model
 {
     //
     protected $fillable =[
+        'employee_id',
         'name',
         'start_date',
         'end_date',
@@ -15,7 +16,8 @@ class Contract extends Model
         'gapok',
         'tunjangan_kinerja',
         'tunjangan_jabatan',
-        'tunjangan_presjab'
+        'tunjangan_presjab',
+        'evidence'
     ];
 
     

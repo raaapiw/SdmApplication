@@ -16,8 +16,8 @@ class CreateDefaultContractsTable extends Migration
         Schema::create('default_contracts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->string('jabatan')->nullable();
-            $table->string('degree')->nullable();
+            $table->integer('jabatan')->nullable();
+            $table->integer('degree')->nullable();
             $table->integer('gapok')->nullable();
             $table->integer('tunkin')->nullable();
             $table->integer('tunjab')->nullable();

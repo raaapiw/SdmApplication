@@ -18,5 +18,8 @@
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "jquery-price-format": "git+https://github.com/flaviosilveira/Jquery-Price-Format.git"
     }
 }

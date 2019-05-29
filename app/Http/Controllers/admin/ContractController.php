@@ -7,7 +7,10 @@ use App\Http\Controllers\Controller;
 use \Input as Input;
 use App\Employee;
 use App\Contract;
+use App\Facility;
+use App\DefaultContract;
 use PDF;
+use Storage;
 
 class ContractController extends Controller
 {
@@ -56,8 +59,10 @@ class ContractController extends Controller
     {
         $employee = Employee::find($id);
         // dd($employee);
-
-        return view ('pages.admin.contract.form', compact('employee'));
+        $defaultContract = DefaultContract::where('jabatan','=', $employee->jabatan)->where('degree','=', $employee->degree)->get();
+        // dd($defaultContract);
+        // return dd($employee->contract);
+        return view ('pages.admin.contract.form', compact('employee', 'defaultContract'));
     }
 
     /**
@@ -69,18 +74,43 @@ class ContractController extends Controller
     public function store(Request $request)
     {
         //
-        foreach($request->facility as $index => $row){
-            
-            $data = [
-                'name' => $request->contract,
-                'facility' => $request->facility[$index],
-                'gatot' => $request->gatot
-            ];
-
-            $contract = Contract::create($data);
-
-            return redirect()->url()->previous();
+        $uploadedFile = $request->file('evidence');
+        $uploadedFileName = $request->client_id . '-' . $uploadedFile->getClientOriginalName();
+        if (Storage::exists($uploadedFileName)) {
+            Storage::delete($uploadedFileName);
         }
+        $path = $uploadedFile->storeAs('public/files/kontrak', $uploadedFileName);
+        $data_cont =[
+            'employee_id' => $request->order_id,
+            'name' => $request->name,
+            'gapok'=>$request->gapok,
+            'tunjangan_kinerja'=>$request->tunkin,
+            'tunjangan_jabatan'=>$request->tunjab,
+            'tunjangan_prestasi_jabatan'=>$request->tunpresjab,
+            'gatot' => $request->gatot
+        ];
+        
+        // return dd($data_cont);
+        $contract = Contract::create($data_cont);
+
+        
+        // $arrayFacilities = $request->facility;
+        // dd($arrayFacilities);
+        // foreach($arrayFacilities as $index => $row){
+            
+        //     $data = [
+        //         'contract_id' => $contract->id,
+        //         'facility' => $arrayFacilities[$index],
+        //         'state' => 0
+        //     ];
+
+            
+        //     $facility = Facility::create($data);
+    
+            // return dd($data);
+        
+        return redirect()->route('admin.dashboard');
+        
         
 
         
@@ -108,8 +138,9 @@ class ContractController extends Controller
         //
         $contract = Contract::find($id);
         $employee = Employee::where('id','=', $contract->employee_id)->first();
+        $defaultContract = DefaultContract::where('jabatan','=', $employee->jabatan)->where('degree','=', $employee->degree)->get();
 
-        return view('pages.admin.contract.form', compact('contract','employee'));
+        return view('pages.admin.contract.form', compact('contract','employee', 'defaultContract'));
     }
 
     /**
@@ -133,7 +164,6 @@ class ContractController extends Controller
 
             $contract = Contract::create($data);
 
-            return redirect()->url()->previous();
         }
 
     }
@@ -153,8 +183,9 @@ class ContractController extends Controller
     {
         // Fetch selected contract from database
         $data = Contract::find($id);
+        // return dd($data);
         // Send data to the view using loadView function of PDF facade
-        $pdf = PDF::loadView('pages.pdf.contract1', $data);
+        $pdf = PDF::loadView('pages.pdf.contract4', ['data' => $data]);
         // If you want to store the generated pdf to the server then you can use the store function
         $pdf->save(storage_path().'_filename.pdf');
         // Finally, you can download the file using download function
