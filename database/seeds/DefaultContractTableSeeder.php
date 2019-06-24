@@ -18,7 +18,7 @@ class DefaultContractTableSeeder extends Seeder
             DB::table('default_contracts')->insert([               
                 'name' => $faker->name(),             
                 'jabatan' => 11+$index,
-                'degree' => $faker->century(),   
+                // 'degree' => $faker->century(),   
                 'gapok' => $faker->year(),
                 'tunkin' => $faker->ean8(),
                 'tunjab' => $faker->ean8(),

@@ -126,6 +126,7 @@
                         <b>NILO WIDYO MUDITO</b>, Kepala Divisi Bisnis Mineral dan Batubara bertindak untuk dan atas nama Direktur PT. Surveyor Indonesia berdasarkan Akta Notaris Surjadi, SH., MKn., MM. No.10 tentang Pencabutan dan Pengangkatan Pimpinan Serta Tugas Wewenang Kepala Divisi Bisnis Mineral dan Batubara tanggal 21 Juli 2016, berkedudukan di Gedung Adhi Graha Lt. 4 -11 Jalan Jenderal Gatot Subroto Kavling 56 Jakarta 12950.
                         selanjutnya disebut <b>PIHAK PERTAMA</b>.
                     </li>
+                    
                     <li>
                         <b>{{$data->employee->name}}</b>, tempat dan tanggal lahir di ??Ujung Pandang, 05 Mei 1996??, jenis kelamin ??Perempuan??, bertempat tinggal di ??Jl. Komplek Goodyear Blok E No.4 Ciomas Rahayu Bogor Jawa Barat??. 
                         selanjutnya disebut <b>PIHAK KEDUA</b>.
