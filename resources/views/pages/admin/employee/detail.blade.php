@@ -201,7 +201,7 @@
                                 <table id="myTable" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Nama Kontrak</th>
+                                            <th>Tahun Kontrak</th>
                                             <th>Tanggal Mulai</th>
                                             <th>Tanggal Berakhir</th>
                                             <th><center>Print</center></th>
@@ -211,10 +211,16 @@
                                     @foreach($contract as $row)
                                         <tbody>
                                             <tr>
-                                                <td>{{$row->name}}</td>
+                                                <td>{{$row->tahun}}</td>
                                                 <td>{{$row->start_date}}</td>
                                                 <td>{{$row->end_date}}</td>
-                                                <td><center><a target=__blank href="{{ route('admin.contract.print', $row->id) }}"><span><i class="fa fa-print"></i></span></a></center></td>
+                                                <td>
+                                                    @if($row->kind == "k1")
+                                                        {{-- <center><a target=__blank href="{{ route('admin.contract.print', $row->id) }}"><span><i class="fa fa-print"></i></span></a></center> --}}
+                                                    @else
+                                                        
+                                                    @endif
+                                                </td>
                                                 <td><center><a href="{{ route('admin.contract.edit', $row->id) }}"><span><i class="fa fa-pencil"></i></span></a></center></td>  
                                             </tr>
                                         </tbody>                        

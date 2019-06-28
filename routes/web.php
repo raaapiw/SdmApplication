@@ -30,6 +30,7 @@ Route::group(['middleware' => 'admin'], function() {
     Route::post('/admin/employee/store', 'admin\EmployeeController@store') ->name('admin.employee.store');
     Route::post('/admin/employee/update/{id}', 'admin\EmployeeController@update') ->name('admin.employee.update');
     Route::get('/admin/employee/detail/{id}', 'admin\EmployeeController@detail') ->name('admin.employee.detail');
+    Route::get('/admin/employee/edit/{id}', 'admin\EmployeeController@edit')->name('admin.employee.edit');
     
     Route::get('/admin/contract/add-new', 'admin\ContractController@addNew')->name('admin.contract.addNew');
     Route::get('/admin/contract/add-Renew', 'admin\ContractController@addRenew')->name('admin.contract.addRenew');

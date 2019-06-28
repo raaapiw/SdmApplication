@@ -74,22 +74,28 @@ class ContractController extends Controller
     public function store(Request $request)
     {
         //
-        $uploadedFile = $request->file('evidence');
-        $uploadedFileName = $request->client_id . '-' . $uploadedFile->getClientOriginalName();
-        if (Storage::exists($uploadedFileName)) {
-            Storage::delete($uploadedFileName);
-        }
-        $path = $uploadedFile->storeAs('public/files/kontrak', $uploadedFileName);
+        // $uploadedFile = $request->file('evidence');
+        // $uploadedFileName = $request->client_id . '-' . $uploadedFile->getClientOriginalName();
+        // if (Storage::exists($uploadedFileName)) {
+        //     Storage::delete($uploadedFileName);
+        // }
+        // $path = $uploadedFile->storeAs('public/files/kontrak', $uploadedFileName);
+        $total = array($request->gapok,$request->tunkin,$request->tunjab,$request->tunpresjab);
+        $sum = array_sum($total);
         $data_cont =[
             'employee_id' => $request->order_id,
             'name' => $request->name,
             'gapok'=>$request->gapok,
+            'start_date'=>$request->start_date,
+            'end_date'=>$request->end_date,
             'tunjangan_kinerja'=>$request->tunkin,
             'tunjangan_jabatan'=>$request->tunjab,
             'tunjangan_prestasi_jabatan'=>$request->tunpresjab,
-            'gatot' => $request->gatot
+            'gatot' => $sum,
+            'noperj'=>$request->noperj,
+            'tahun'=>$request->tahun,
+            'kind'=>$request->kind
         ];
-        
         // return dd($data_cont);
         $contract = Contract::create($data_cont);
 
@@ -138,7 +144,7 @@ class ContractController extends Controller
         //
         $contract = Contract::find($id);
         $employee = Employee::where('id','=', $contract->employee_id)->first();
-        $defaultContract = DefaultContract::where('jabatan','=', $employee->jabatan)->where('degree','=', $employee->degree)->get();
+        // $defaultContract = DefaultContract::where('jabatan','=', $employee->jabatan)->where('degree','=', $employee->degree)->get();
 
         return view('pages.admin.contract.form', compact('contract','employee', 'defaultContract'));
     }
@@ -154,17 +160,38 @@ class ContractController extends Controller
     {
         //
         $contract = Contract::find($id);
-        foreach($request->facility as $index => $row){
+        $total = array($request->gapok,$request->tunkin,$request->tunjab,$request->tunpresjab);
+        $sum = array_sum($total);
+        $data_cont =[
+            'employee_id' => $request->order_id,
+            'name' => $request->name,
+            'gapok'=>$request->gapok,
+            'start_date'=>$request->start_date,
+            'end_date'=>$request->end_date,
+            'tunjangan_kinerja'=>$request->tunkin,
+            'tunjangan_jabatan'=>$request->tunjab,
+            'tunjangan_prestasi_jabatan'=>$request->tunpresjab,
+            'gatot' => $sum,
+            'noperj'=>$request->noperj,
+            'tahun'=>$request->tahun,
+            'kind'=>$request->kind
+        ];
+        
+        // return dd($data_cont);
+        $contract->fill($data)->save();;
+        return redirect()->route('admin.dashboard');
+        // $contract = Contract::find($id);
+        // foreach($request->facility as $index => $row){
             
-            $data = [
-                'name' => $request->contract,
-                'facility' => $request->facility[$index],
-                'gatot' => $request->gatot
-            ];
+        //     $data = [
+        //         'name' => $request->contract,
+        //         'facility' => $request->facility[$index],
+        //         'gatot' => $request->gatot
+        //     ];
 
-            $contract = Contract::create($data);
+        //     $contract = Contract::create($data);
 
-        }
+        
 
     }
 
@@ -177,6 +204,9 @@ class ContractController extends Controller
     public function destroy($id)
     {
         //
+        $contract = Contract::find($id);
+        $contract->delete();
+        return redirect()->route('admin.dashboard');
     }
 
     public function print($id)

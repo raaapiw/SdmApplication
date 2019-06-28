@@ -43,6 +43,16 @@ class CreateEmployeesTable extends Migration
             $table->string('bpjs_kes_anak1')->nullable();
             $table->string('bpjs_kes_anak2')->nullable();
             $table->string('bpjs_kes_anak3')->nullable();
+            $table->string('email')->nullable();
+            $table->string('no_telp')->nullable();
+            $table->string('tempat_lahir')->nullable();
+            $table->string('tanggal_lahir')->nullable();
+            $table->string('ttl_anak1')->nullable();
+            $table->string('ttl_anak2')->nullable();
+            $table->string('ttl_anak3')->nullable();
+            $table->string('kelas_bpjs')->nullable();
+            $table->string('sex')->nullable();
+            
             $table->timestamps();
         });
     }
