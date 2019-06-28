@@ -4,7 +4,16 @@
         <title>Vertretung während Reise – 1. Dezember 2012</title>
         <link rel="stylesheet" href="letter.css" />
         <style>
-
+            #footer{
+                height:50px;
+                line-height:2px;
+                font-family: "Arial", "Verdana", sans-serif;
+                font-size: 5pt;
+                /* background:#333; */
+                color:#333;
+                position:absolute;
+                bottom:-20px;
+            }
             .content{
                 font-family: "Arial", "Verdana", sans-serif;
                 font-size: 11pt;
@@ -13,6 +22,9 @@
                 margin-bottom: 20px;
                 padding: 0px;
                 page-break-after: always;
+                position: relative;
+                z-index: 0;
+                
             }
             .pagebreak { page-break-before: always; }
             div.a {
@@ -43,6 +55,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 display:table;
+                
             }
             #pihak ol{
                 text-align: justify;
@@ -113,7 +126,7 @@
         <div class="header1">
             <center>
                 <h4><u>PERJANJIAN KERJA UNTUK WAKTU TERTENTU</u><br>
-                PERJ-{{ $data->name }}/MINBA-I/NWM/2019</h4>
+                {{ $data->noperj }}</h4>
             </center>
         </div>
         <div class="content"> <!-- use this div only if it is required for styling -->
@@ -127,7 +140,7 @@
                         selanjutnya disebut <b>PIHAK PERTAMA</b>.
                     </li>
                     <li>
-                        <b>{{$data->employee->name}}</b>, tempat dan tanggal lahir di ??Ujung Pandang, 05 Mei 1996??, jenis kelamin ??Perempuan??, bertempat tinggal di ??Jl. Komplek Goodyear Blok E No.4 Ciomas Rahayu Bogor Jawa Barat??. 
+                        <b>{{$data->employee->name}}</b>, tempat dan tanggal lahir di ??{{$data->employee->tempat_lahir}}, {{$data->employee->tanggal_lahir}}??, jenis kelamin ??Perempuan??, bertempat tinggal di ??Jl. Komplek Goodyear Blok E No.4 Ciomas Rahayu Bogor Jawa Barat??. 
                         selanjutnya disebut <b>PIHAK KEDUA</b>.
                     </li>
                 </ol>
@@ -189,7 +202,27 @@
                         dengan dipotong Jamsostek sebesar 2% (dua persen) dari upah. <br> 
                         - Gaji Pokok&nbsp;&nbsp;&nbsp;: <br>
                         - Tunj Kinerja&nbsp;:
+                        
+                        <hr style="margin-left:-28pt;"width="100%" align="left" margin>
                     </li>
+                    <div style="margin-left:-692px; text-align:left;" id="footer">
+                            <br>
+                            <br>
+                        PERJANJIAN KERJA UNTUK WAKTU TERTENTU <span style="padding-left:630px;">halaman 1 dari 6
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        dd<span style="padding-left:30px;">/mrd
+                    </div>
                     <div class="pagebreak"> </div>
                     <br>
                     <br>
@@ -265,7 +298,30 @@
                                     </li>
                                     <li>
                                         Semua jenis kelainan cacat bawaan, seperti kusta, bibir sumbing, kelainan jantung dan kelainan lainnya sesuai dengan diagnosa dokter yang merawat.
+                                        <hr style="margin-left:-60pt;"width="100%" align="left" margin>
                                     </li>
+                                    <div style="margin-left:-692px; text-align:left;" id="footer">
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                        PERJANJIAN KERJA UNTUK WAKTU TERTENTU <span style="padding-left:630px;">halaman 2 dari 6
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                        dd<span style="padding-left:30px;">/mrd
+                                    </div>
                                     <div class="pagebreak"> </div>
                                     <br>
                                     <br>
@@ -363,6 +419,25 @@
                     </li>
                 </ol>
             </div>
+            <div id="footer">
+                    <hr>
+                    <br>
+                    <br>
+                PERJANJIAN KERJA UNTUK WAKTU TERTENTU <span style="padding-left:481px;">halaman 3 dari 6
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                dd<span style="padding-left:30px;">/mrd
+            </div>
             <div class="pagebreak"> </div>
             <br>
             <br>
@@ -443,6 +518,25 @@
             <p align="justify">
                 Bila hubungan kerja ini putus demi hukum karena berakhirnya masa perjanjian kerja, maka bila perjanjian kerja ini tidak dilanjutkan dengan suatu hubungan kerja baru, maka perjanjian kerja ini akan berakhir secara otomatis dan <b>PIHAK KEDUA</b> wajib menyerahkan semua hal yang dipercayakan perusahaan kepada <b>PIHAK PERTAMA</b>.  
             </p>
+            <div id="footer">
+                    <hr>
+                    <br>
+                    <br>
+                PERJANJIAN KERJA UNTUK WAKTU TERTENTU <span style="padding-left:481px;">halaman 4 dari 6
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                dd<span style="padding-left:30px;">/mrd
+            </div>
             <div class="pagebreak"> </div>
             <br>
             <br>
@@ -519,7 +613,25 @@
                     </li>
                 </ol>
             </div>
-            
+            <div id="footer">
+                    <hr>
+                    <br>
+                    <br>
+                PERJANJIAN KERJA UNTUK WAKTU TERTENTU <span style="padding-left:481px;">halaman 5 dari 6
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                dd<span style="padding-left:30px;">/mrd
+            </div>
             <div class="pagebreak"> </div>
             <br>
             <br>
@@ -580,6 +692,25 @@
                 <td style="width:10%"></td>
             </tr>
             </table>
+            <div id="footer">
+                    <hr>
+                    <br>
+                    <br>
+                PERJANJIAN KERJA UNTUK WAKTU TERTENTU <span style="padding-left:481px;">halaman 6 dari 6
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                dd<span style="padding-left:30px;">/mrd
+            </div>
         </div>
-    </body> 
+    </body>
 </html>

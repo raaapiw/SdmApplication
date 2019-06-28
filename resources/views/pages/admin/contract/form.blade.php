@@ -59,16 +59,13 @@
                                             </div>
                                         <br>                                        
                                         <hr>
-                                        <h3 class="card-title">Jenis Kontrak</h3>                                                                               
-                                        <select id="id" class="form-control custom-select" name="name" onchange="changeContract(event)" >                  
+                                        <h3 class="card-title">Jenis Print Kontrak</h3>                                                                               
+                                        <select id="id" class="form-control custom-select" name="kind" onchange="changeContract(event)" >                  
                                             <option disabled selected>Pilih Kontrak</option>
                                             <option value="k1">Kontrak Tahun ke-1</option>
-                                            <option value="k2">Kontrak Tahun ke-2</option>
                                             <option value="k3">Kontrak Tahun ke-3</option>
-                                            <option value="k4">Kontrak Tahun ke-4</option>
-                                            <option value="k5">Kontrak Tahun ke-5</option>
-                                            <option value="k6">Kontrak Tahun ke-6</option>
-                                            <option value="k7">Kontrak Tahun ke-7</option>
+                                            <option value="k5">Kontrak Perpanjangan Umum untuk Tunjangan Tahun ke-5</option>
+                                            <option value="k7">Kontrak Perpanjangan Umum untuk Tunjangan Tahun ke-7</option>
                                             <option value="a1">Adendum Prestasi</option>
                                             <option value="a2">Adendum Umum</option>
                                             <option value="ta1">Tenaga Ahli per Termin</option>
@@ -83,6 +80,20 @@
                                             {{-- @endforeach --}}
                                         </select>
                                         <br>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>No Perjanjian</label>
+                                                <input type="text" name="noperj" required class="form-control" /> 
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label>Kontrak Tahun Ke</label><br>
+                                                <input type="number" name="tahun" required class="form-control" /> 
+                                            </div>
+                                        </div>
                                         <br>
                                         <div class="row">
                                             <div class="col-md-5">
@@ -100,7 +111,7 @@
                                             <div class="col-md-5">
                                                 <label>Tanggal Berakhir Kontrak</label>
                                                 <br>
-                                                <input type="date" name="end_date" class="form-control"  />           
+                                                <input type="date" name="end_date" class="form-control"/>           
                                             </div>
                                         </div>
                                         <br>
@@ -112,19 +123,19 @@
                                                     <div class="form-group">
                                                         <label>Gaji Pokok</label>
                                                         <br>
-                                                        <input type="text" maxlength="9" id="gapok" name="gapok" class="form-control prc"  />   
+                                                        <input type="number" maxlength="9" id="gapok" name="gapok" class="form-control prc"  />   
                                                     </div>
     
                                                     <div class="form-group">
                                                         <label>Tunjangan Kinerja</label>
                                                         <br>
-                                                        <input type="text" pattern="[0-9]*" id="tunkin" name="tunkin" class="form-control prc"/>       
+                                                        <input type="number" pattern="[0-9]*" id="tunkin" name="tunkin" class="form-control prc"/>       
                                                     </div>
     
                                                     <div class="form-group">
                                                         <label>Tunjangan Jabatan</label>
                                                         <br>
-                                                            <input type="text" name="tunjab" id="tunjab" pattern="[0-9]*" class="form-control prc"/> 
+                                                            <input type="number" name="tunjab" id="tunjab" pattern="[0-9]*" class="form-control prc"/> 
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Tunjangan Prestasi Jabatan</label>
@@ -134,7 +145,7 @@
                                                     <div class="form-group">
                                                         <label>Total Gaji</label>
                                                         <br>
-                                                        Rp <output type="text" id="total" name="gatot" pattern="[0-9]*" />        
+                                                        Rp <output type="number" id="total" name="gatot" />        
                                                     </div>
                                                 </div>
                                             </div>
@@ -187,14 +198,14 @@
                                         </div>                                         
                                         <br>
                                         <hr>
-                                        <div class="row">
+                                        {{-- <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <h3 class="card-title">File Kontrak</h3>
                                                     <input type="file" class="form-control" id="waktu" name="evidence" required >
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <hr>
                                         <br>
                                         <br>

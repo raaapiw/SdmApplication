@@ -17,7 +17,11 @@ class Contract extends Model
         'tunjangan_kinerja',
         'tunjangan_jabatan',
         'tunjangan_presjab',
-        'evidence'
+        'gatot',
+        'evidence',
+        'noperj',
+        'tahun',
+        'kind'
     ];
 
     
