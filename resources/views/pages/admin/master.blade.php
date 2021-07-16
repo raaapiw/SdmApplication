@@ -32,29 +32,14 @@
                     <table id="myTable" class="display table table-bordered table-striped nowrap">
                         <thead>
                             <tr>
-                                <th rowspan="2" style="width:5%" class="text-center">No</th>
+                                <th rowspan="2" class="text-center">No</th>
                                 <th rowspan="2" class="text-center">Payroll</th>
-                                <th rowspan="2" class="text-center">NIK</th>
+                                <th rowspan="2" class="text-center">NIP</th>
                                 <th rowspan="2" class="text-center">Nama</th>
                                 <th rowspan="2" class="text-center">Jabatan</th>
                                 <th rowspan="2" class="text-center">Wilayah</th>
-                                <th colspan="2" class="text-center">Kontrak I</th>
-                                <th colspan="2" class="text-center">Kontrak II</th>
-                                <th colspan="2" class="text-center">Kontrak III</th>
-                                <th colspan="2" class="text-center">Kontrak IV</th>
-                                <th colspan="2" class="text-center">Kontrak V</th>
-                                <th colspan="2" class="text-center">Kontrak VI</th>
-                                <th colspan="2" class="text-center">Kontrak VII</th>
-                                <th colspan="2" class="text-center">Kontrak VIII</th>
-                                <th colspan="2" class="text-center">Kontrak IX</th>
-                                <th colspan="2" class="text-center">Kontrak X</th>
-                                <th colspan="2" class="text-center">Kontrak XI</th>
-                                <th colspan="2" class="text-center">Kontrak XII</th>
-                                <th colspan="2" class="text-center">Kontrak XIII</th>
-                                <th colspan="2" class="text-center">Kontrak XIV</th>
-                                <th colspan="2" class="text-center">Kontrak XV</th>
                                 <th rowspan="2" class="text-center">BPJS Kesehatan</th>
-                                <th rowspan="2" class="text-center">BPJS Ketenagakerjaan</th>
+                                <th rowspan="2" class="text-center">No. Taspen</th>
                                 <th rowspan="2" class="text-center">No. Rekening</th>
                                 <th rowspan="2" class="text-center">Nama Bank</th>
                                 <th rowspan="2" class="text-center">Cabang Bank</th>
@@ -63,8 +48,8 @@
                                 <th rowspan="2" class="text-center">Almamater</th>
                                 <th rowspan="2" class="text-center">Tgl. Ijazah</th>
                                 <th rowspan="2" class="text-center">NPWP</th>
-                                <th rowspan="2" class="text-center">Sex</th>
-                                <th rowspan="2" class="text-center">KTP</th>
+                                <th rowspan="2" class="text-center">Jenis Kelamin</th>
+                                <th rowspan="2" class="text-center">No. KTP</th>
                                 <th rowspan="2" class="text-center">HP</th>
                                 <th rowspan="2" class="text-center">Alamat</th>
                                 <th colspan="2" class="text-center">Kelahiran</th>
@@ -73,7 +58,7 @@
                                 <th rowspan="2" class="text-center">email</th>
                             </tr>
                             <tr>
-                                <th class="text-center">Mulai 1</th>
+                                {{-- <th class="text-center">Mulai 1</th>
                                 <th class="text-center">Berakhir 1</th>
                                 <th class="text-center">Mulai 2</th>
                                 <th class="text-center">Berakhir 2</th>
@@ -102,7 +87,7 @@
                                 <th class="text-center">Mulai 14</th>
                                 <th class="text-center">Berakhir 14</th>   
                                 <th class="text-center">Mulai 15</th>
-                                <th class="text-center">Berakhir 15</th>    
+                                <th class="text-center">Berakhir 15</th>     --}}
                                 <th class="text-center">Tempat</th>
                                 <th class="text-center">Tanggal</th>       
                                 <th class="text-center">Nama Istri/Suami</th>
@@ -125,6 +110,7 @@
                                         <td>{{$row->name}}</td>
                                         <td>{{$row->jabatan}}</td>
                                         <td>{{$row->wilayah}}</td>
+                                        {{-- <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -153,8 +139,7 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>   
+                                        <td></td>    --}}
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -188,12 +173,12 @@
                         <tfoot>
                             <tr>
                                 <th>No</th>
-                                <th>Payroll</th>
+                                <th>Eselon 4</th>
                                 <th>NIK</th>
                                 <th>Nama</th>
                                 <th>Jabatan</th>
                                 <th>Wilayah</th>
-                                <th>Kontrak I</th>
+                                {{-- <th>Kontrak I</th>
                                 <th>Kontrak I</th>
                                 <th>Kontrak II</th>
                                 <th>Kontrak II</th>
@@ -222,7 +207,7 @@
                                 <th>Kontrak XIV</th>
                                 <th>Kontrak XIV</th>
                                 <th>Kontrak XV</th>
-                                <th>Kontrak XV</th>
+                                <th>Kontrak XV</th> --}}
                                 <th>BPJS KES</th>
                                 <th>BPJS TK</th>
                                 <th>NOREK</th>
