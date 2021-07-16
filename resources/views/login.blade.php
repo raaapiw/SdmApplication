@@ -9,8 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('material/images/head-logo.png')}}">
-    <title>SDM MinBa</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('material/images/favicon.ico')}}">
+    <title>Kepegawaian BTP Jabar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <!-- Bootstrap Core CSS -->
     {{--  <link href="../material/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">  --}}
     <link href="{{ asset('material/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -37,12 +38,18 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <section id="wrapper" class="login-register login-sidebar"  style="background-image:url({{ asset('material/images/background/new.jpg')}});">
+    <section id="wrapper" class="login-register login-sidebar"  style="background-image:url({{ asset('material/images/background/back3.jpg')}});">
   <div class="login-box card">
     <div class="card-body">
       <form class="form-horizontal form-material" id="loginform" action="{{ route('postLogin') }}" method="POST">
-        <a href="https://www.ptsi.co.id/" class="text-center db"><img src="{{ asset('material/images/SURVEYOR.png')}}" alt="Home" /></a>  
-        
+        <a href="http://www.dephub.go.id/" class="text-center db"><img src="{{ asset('material/images/logokemenhub.png')}}" alt="Home" width="75px"/>
+          <h2 style="text-align:center; font-weight: bold; font-family: 'Ubuntu', serif;">KEPEGAWAIAN <br> BTP JABAR</h2>
+        {{-- <p style = "font-family: Helvetica, sans-serif;  text-align: center; font-weight: bold; color: black;">
+            <br>KEPEGAWAIAN BALAI TEKNIK PERKERETAAPIAN
+            WILAYAH JAWA BAGIAN BARAT
+          </p> --}}
+        </a> 
+        {{-- <a href="http://www.dephub.go.id/" class="text-right db"><img src="{{ asset('material/images/logobtp.png')}}" alt="Home"  width="50px"/></a>  --}}
         @if(session('error'))
         <div class="form-group m-t-30">
             <div class="col-xs-12">
@@ -63,9 +70,14 @@
         
         <div class="form-group text-center m-t-20">
           <div class="col-xs-12">
-            <button class="btn btn-success btn-lg btn-block text-uppercase waves-effect waves-light" type="submit" style="background-color:red">Log In</button>
+            <button class="btn btn-success btn-lg btn-block text-uppercase waves-effect waves-light" type="submit" style="background-color:#2c176e">Log In</button>
           </div>
         </div>
+        <div class="form-group m-b-0">
+          <div class="col-sm-12 text-center">
+              <p>Lupa Password <a href="https://api.whatsapp.com/send?phone=6281394764570&text=Halo%20admin%20Verifikasi%20Smelter%20PTSI,%20" target="__blank" class="text-primary m-l-5"><b>Hubungi admin.</b></a></p>
+          </div>
+      </div>
         {{-- <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
             <div class="social"><a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip"  title="Login with Facebook"> <i aria-hidden="true" class="fa fa-facebook"></i> </a> <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip"  title="Login with Google"> <i aria-hidden="true" class="fa fa-google-plus"></i> </a> </div>

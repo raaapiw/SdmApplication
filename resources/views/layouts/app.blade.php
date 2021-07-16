@@ -10,17 +10,16 @@
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- <meta name="userId" content="{{ Auth::check() ? Auth::user->id : '' }}"> --}}
-    
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('material/images/head-logo.png') }}">
-    <title>SDM MinBa</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('material/images/favicon.ico') }}">
+    <title>Kepegawaian BTP Jabar</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('material/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     @yield('style')
     <!-- Custom CSS -->
     <link href="{{ asset('material/css/style.css') }}" rel="stylesheet">
     <!-- You can change the theme colors from here -->
-    <link href="{{ asset('material/css/colors/red.css') }}" id="theme" rel="stylesheet">
+    <link href="{{ asset('material/css/colors/blue.css') }}" id="theme" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,14 +58,14 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="https://www.ptsi.co.id/">
+                        <a class="navbar-brand" href="http://www.dephub.go.id/">
                             <!-- Logo icon -->
                             <b>
                                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                                 <!-- Dark Logo icon -->
                                 <img src="{{ asset('material/images/head-logo.png') }}" alt="homepage" class="dark-logo" />
                                 <!-- Light Logo icon -->
-                                <img src="{{ asset('material/images/head-logo.png') }}" alt="homepage" class="light-logo" />
+                                <img width="40px" src="{{ asset('material/images/logo_id.png') }}" alt="homepage" class="light-logo" />
                             </b>
                             <!--End Logo icon -->
                             <!-- Logo text -->
@@ -74,7 +73,7 @@
                             <!-- dark Logo text -->
                             <img src="{{ asset('material/images/head-logo.png') }}" alt="homepage" class="dark-logo" />
                             <!-- Light Logo text -->    
-                            <img src="{{ asset('material/images/logo3.png') }}" class="light-logo" alt="homepage" /></span> </a>
+                            <img width="150px" src="{{ asset('material/images/logo_id2.png') }}" class="light-logo" alt="homepage" /></span> </a>
                     </div>
                     <!-- ============================================================== -->
                     <!-- End Logo -->
@@ -292,13 +291,13 @@
                 <!-- Sidebar scroll-->
                 <div class="scroll-sidebar">
                     <!-- User profile -->
-                    {{-- <div class="user-profile" style="background: url({{ asset('material/images/background/user-info.jpg') }}) no-repeat;">
+                    <div class="user-profile" style="background: url({{ asset('material/images/background/user-info.jpg') }}) no-repeat;">
                         <!-- User profile image -->
                         <div class="profile-img"> <img src="{{ asset('material/images/admin.png') }}" alt="user" /> </div>
                         <!-- User profile text-->
                         <div class="profile-text"> <a href="#" role="button" aria-haspopup="true" aria-expanded="true">{{ Sentinel::getUser()->name }}<span class="caret"></span></a>
                         </div>
-                    </div> --}}
+                    </div>
                     <!-- End User profile text-->
                     <!-- Sidebar navigation-->
                     <nav class="sidebar-nav">
@@ -566,7 +565,7 @@
                 <!-- footer -->
                 <!-- ============================================================== -->
                 <footer class="footer">
-                    © 2018 Surveyor Indonesia
+                    © 2021 BTP Jabar - Kementerian Perhubungan
                 </footer>
                 <!-- ============================================================== -->
                 <!-- End footer -->
